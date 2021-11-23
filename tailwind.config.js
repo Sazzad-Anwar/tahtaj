@@ -12,9 +12,12 @@ module.exports = {
         '2xl': '0rem',
       },
     },
-    // colors: {
-    //   cyan: '#00ace1'
-    // },
+    textColor: theme => ({
+      ...theme('colors'),
+      'primary': '#302D86',
+      'secondary': '#00ACE1',
+      'tertiary': '#838383',
+    }),
     backgroundColor: theme => ({
       ...theme('colors'),
       'primary': '#302D86',

@@ -9,6 +9,7 @@ $(document).ready(() => {
     menuBtn.addEventListener("click", () => {
         menuBtn.classList.toggle("open");
         menuItems.classList.toggle("open");
+        document.body.classList.toggle("overflow-hidden");
     });
 
     // mobile menu expand
@@ -28,6 +29,11 @@ $(document).ready(() => {
     } else {
         ('.bi-plus-lg').removeClass('bi-plus-lg').addClass('bi-chevron-right');
     }
-
 });
+
+$('.go-top').on('click', () => {
+    $('html, body').animate({
+        scrollTop: 0
+    });
+})
 
