@@ -1,6 +1,6 @@
 # Tahtaj
 
-An e-commerce fronten project for the Tahtaj, Dubai, UAE.
+An e-commerce frontend project for the Tahtaj, Dubai, UAE.
 
-[See]('https://github.com/sazzad-anwar')
+[See](https://sazzad-anwar.github.io/tahtaj)
 <img style="margin-top:2rem" src="./index.png" />
