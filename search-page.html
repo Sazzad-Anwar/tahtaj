@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./src/images/logo.png" type="image/png" />
+        <meta
+            name="description"
+            content="A website template with tailwind CSS, Animate.js, Wow.js, jQuery, Bootstrap icons, Material Icons"
+        />
+        <link rel="stylesheet" href="./src/css/tailwind.css" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+
+        <!-- Animate csss -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="./src/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./src/css/owl.theme.default.min.css" />
+
+        <title>Tahtaj | Search Page</title>
+    </head>
+    <body>
+        <nav class="lg:container mx-auto">
+            <header class="header">
+                <a href="/" class="logo">
+                    <img src="./src/images/full-logo.png" alt="logo" />
+                </a>
+                <div class="menu-btn">
+                    <div class="menu-btn__lines"></div>
+                </div>
+                <ul class="menu-items">
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >Property</a
+                        >
+                    </li>
+                    <li class="hover-true">
+                        <a
+                            href="#"
+                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                        >
+                            Motores
+                        </a>
+                    </li>
+                    <li class="hover-true">
+                        <a
+                            href="#"
+                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                        >
+                            Electronics
+                        </a>
+                    </li>
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >General Items</a
+                        >
+                    </li>
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >Jobs</a
+                        >
+                    </li>
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >Whole Seller</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                        >
+                            <img src="./src/images/search-icon.png" alt="search" />
+                        </a>
+                    </li>
+                    <li class="dropdown w-full lg:w-40">
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-base
+                                2xl:text-bastext-sm
+                                expand-btn
+                                flex
+                                justify-start
+                                lg:justify-center
+                                items-center
+                            "
+                        >
+                            <img
+                                class="h-4 w-auto mx-1"
+                                src="./src/images/location-icon.png"
+                                alt="location"
+                            />
+                            <span> Dubai </span>
+                            <img
+                                class="h-auto w-auto mx-3"
+                                src="./src/images/arrow-down.png"
+                                alt="location"
+                            />
+                        </a>
+                        <ul class="dropdown-menu expandable">
+                            <li
+                                class="
+                                    bg-white
+                                    border-b border-transparent
+                                    hover:border-blue-800 hover:bg-blue-100
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2"> Sharjah </a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2">Abu Dhabi</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2">Fujairah</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2"
+                                    >Ras al Khaimah</a
+                                >
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2"
+                                    >Umm Al Quwain</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-base
+                                2xl:text-bastext-sm
+                                expand-btn
+                                flex
+                                justify-start
+                                lg:justify-center
+                                items-center
+                            "
+                        >
+                            <img
+                                class="h-4 w-auto mr-1"
+                                src="./src/images/language.png"
+                                alt="location"
+                            />
+                            <span> English </span>
+                            <img
+                                class="h-auto w-auto ml-3"
+                                src="./src/images/arrow-down.png"
+                                alt="location"
+                            />
+                        </a>
+                        <ul class="dropdown-menu expandable">
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Arabic</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Chinese</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Russian</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-base
+                                text-sm2xl:text-base
+                                relative
+                            "
+                        >
+                            <img src="./src/images/notification.png" alt="notification" />
+                            <div
+                                class="
+                                    absolute
+                                    top-.5
+                                    -right-1
+                                    rounded-full
+                                    lg:text-xs
+                                    text-white
+                                    bg-red-700
+                                    px-1
+                                    py-.5
+                                "
+                                style="font-size: 10px"
+                            >
+                                2
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown w-24">
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-sm
+                                2xl:text-base
+                                flex
+                                justify-center
+                            "
+                        >
+                            <img src="./src/images/account-icon.png" alt="account-icon" />
+                        </a>
+                        <ul class="dropdown-menu expandable">
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Login</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Registration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="group">
+                        <a
+                            href="#"
+                            class="
+                                bg-primary
+                                text-white
+                                px-3
+                                py-2
+                                lg:px-4 lg:py-2
+                                xl:px-6 xl:py-2
+                                2xl:px-8 2xl:py-4
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-sm
+                                2xl:text-base
+                                shadow-none
+                                group-hover:text-white group-hover:shadow-2xl
+                                transition
+                                ease-in-out
+                                duration-1000
+                                rounded-lg
+                                w-32
+                                lg:w-auto
+                            "
+                        >
+                            Post your AD
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </nav>
+
+        <section class="h-auto flex flex-col justify-center items-center relative">
+            <div
+                class="
+                    overflow-x-hidden
+                    py-10
+                    w-full
+                    flex
+                    justify-center
+                    items-center
+                    bg-cover bg-no-repeat bg-center
+                "
+                style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('./src/images/Banner-1.png');
+                "
+            >
+                <div class="container pt-20 pb-36 text-center">
+                    <h1 class="text-4xl font-semibold text-white">Search page</h1>
+                    <div class="text-lg text-white flex flex-wrap justify-center items-center mt-3">
+                        <p class="text-lg mr-3">Home</p>
+                        <i class="bi bi-chevron-right mr-3 text-xs"></i>
+                        <p class="text-lg mr-3">Classified Listings</p>
+                        <i class="bi bi-chevron-right mr-3 text-xs"></i>
+                        <p class="text-lg">BMW 40I Xline</p>
+                    </div>
+                    <form
+                        class="
+                            flex flex-col
+                            md:flex-row
+                            items-center
+                            justify-center
+                            mt-6
+                            lg:mx-10
+                            xl:mx-80
+                        "
+                        action="search-page.html"
+                    >
+                        <!-- <select
+                            name="category"
+                            class="
+                                border-r-2
+                                px-5
+                                text-xs
+                                w-full
+                                lg:text-base
+                                rounded-l-lg rounded-r-lg
+                                md:rounded-r-none md:w-auto
+                                my-1
+                                md:my-0
+                                focus:outline-none
+                                py-2
+                                h-10
+                                lg:h-14
+                                bg-white
+                                cursor-pointer
+                            "
+                            id=""
+                        >
+                            <option selected>Categories</option>
+                            <option value="cat1">Categories 1</option>
+                            <option value="cat2">Categories 2</option>
+                            <option value="cat3">Categories 3</option>
+                            <option value="cat4">Categories 4</option>
+                        </select> -->
+                        <input
+                            type="text"
+                            name="search-item"
+                            placeholder="Search your product"
+                            class="
+                                py-2
+                                h-10
+                                rounded-l-lg rounded-r-lg
+                                my-1
+                                md:my-0 md:rounded-r-none
+                                lg:h-14
+                                px-5
+                                text-xs
+                                lg:text-base
+                                focus:outline-none
+                                w-full
+                                bg-white
+                            "
+                        />
+                        <button
+                            class="
+                                focus:outline-none
+                                bg-secondary
+                                text-white
+                                rounded-l-lg rounded-r-lg
+                                md:rounded-l-none
+                                my-1
+                                w-full
+                                md:w-auto md:my-0
+                                h-10
+                                lg:h-14
+                                px-8
+                                py-2
+                                text-xs
+                                lg:text-base
+                                hover:shadow-2xl
+                            "
+                        >
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex items-center mt-12 w-full container mx-auto">
+            <div class="w-96 mr-7 shadow-xl">
+                <div class="h-20 bg-primary text-white rounded-t-lg flex items-center">
+                    <p class="text-2xl font-medium pl-7">Refine by</p>
+                </div>
+                <div class="py-4 px-7 bg-gray-100 flex justify-between items-center border">
+                    <p class="text-xl">Category</p>
+                    <div
+                        class="
+                            h-7
+                            w-7
+                            cursor-pointer
+                            rounded-full
+                            hover:shadow-lg hover:bg-primary hover:text-white
+                            transition
+                            duration-200
+                            ease-in-out
+                            flex
+                            justify-center
+                            items-center
+                        "
+                    >
+                        <i class="bi bi-dash-lg text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-7"></div>
+        </section>
+
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- rtl support -->
+        <script src="https://cdn.jsdelivr.net/npm/tailwindcss-rtl@0.8.0/src/index.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="./src/js/owl.carousel.min.js"></script>
+        <!-- Wow animation 'Animation on scroll' -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./src/js/index.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>
