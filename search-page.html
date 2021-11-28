@@ -467,7 +467,19 @@
                 <div class="h-20 bg-primary text-white rounded-t-lg flex items-center">
                     <p class="text-2xl font-medium pl-7">Refine by</p>
                 </div>
-                <div class="py-4 px-7 bg-gray-100 flex justify-between items-center border">
+                <div
+                    class="
+                        flex
+                        justify-between
+                        items-center
+                        bg-gray-100
+                        border
+                        py-4
+                        px-7
+                        dropdown
+                        cursor-pointer
+                    "
+                >
                     <p class="text-xl">Category</p>
                     <div
                         class="
@@ -475,16 +487,62 @@
                             w-7
                             cursor-pointer
                             rounded-full
-                            hover:shadow-lg hover:bg-primary hover:text-white
+                            hover:shadow-lg
                             transition
-                            duration-200
+                            duration-100
                             ease-in-out
                             flex
                             justify-center
                             items-center
                         "
                     >
-                        <i class="bi bi-dash-lg text-xl"></i>
+                        <i class="bi bi-plus-lg text-xl"></i>
+                    </div>
+                </div>
+                <div class="dropdown-area">
+                    <div
+                        class="
+                            flex
+                            justify-between
+                            items-center
+                            cursor-pointer
+                            dropdown
+                            shadow-xl
+                            py-4
+                            px-7
+                            rounded-lg
+                            border
+                        "
+                    >
+                        <p>
+                            <span class="text-lg">Motore</span>
+                            <span class="text-sm text-tertiary">(3454)</span>
+                        </p>
+                        <div
+                            class="
+                                h-6
+                                w-6
+                                pt-1
+                                cursor-pointer
+                                rounded-full
+                                hover:shadow-lg
+                                transition
+                                duration-200
+                                ease-in-out
+                                flex
+                                justify-center
+                                items-center
+                            "
+                        >
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="dropdown-area p-0">
+                        <div class="dropdown border py-4 px-7">
+                            <p>Cars</p>
+                            <p>Bikes</p>
+                            <p>Boats</p>
+                        </div>
                     </div>
                 </div>
             </div>

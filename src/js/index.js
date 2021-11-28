@@ -1,6 +1,6 @@
 $(document).ready(() => {
     console.log('jQuery initialized');
-
+    new WOW().init();
     const menuBtn = document.querySelector(".menu-btn");
     const menuItems = document.querySelector(".menu-items");
     const expandBtn = document.querySelectorAll(".expand-btn");
@@ -24,11 +24,42 @@ $(document).ready(() => {
         });
     });
 
-    if (window.innerWidth < 992) {
-        $('.bi-chevron-right').removeClass('bi-chevron-right').addClass('bi-plus-lg');
-    } else {
-        ('.bi-plus-lg').removeClass('bi-plus-lg').addClass('bi-chevron-right');
-    }
+    // if (window.innerWidth < 992) {
+    //     $('.bi-chevron-right').removeClass('bi-chevron-right').addClass('bi-plus-lg');
+    // } else {
+    //     $('.bi-plus-lg').removeClass('bi-plus-lg').addClass('bi-chevron-right');
+    // }
+
+    let dropdown = document.querySelectorAll('.dropdown');
+
+    dropdown.forEach(element => {
+        element.addEventListener('click', (e) => {
+            e.preventDefault();
+            element.classList.toggle('open');
+            if (element.children[1].children[0].classList.contains('bi-plus-lg')) {
+                element.children[1].classList.add('bg-primary');
+                element.children[1].classList.add('text-white');
+                element.children[1].children[0].classList.add('bi-dash-lg');
+                element.children[1].children[0].classList.remove('bi-plus-lg');
+            } else if (element.children[1].children[0].classList.contains('bi-dash-lg')) {
+                element.children[1].classList.remove('bg-primary');
+                element.children[1].classList.remove('text-white');
+                element.children[1].children[0].classList.add('bi-plus-lg');
+                element.children[1].children[0].classList.remove('bi-dash-lg');
+            } else if (element.children[1].children[0].classList.contains('bi-chevron-right')) {
+                element.children[1].classList.add('bg-primary');
+                element.children[1].classList.add('text-white');
+                element.children[1].children[0].classList.add('bi-chevron-down');
+                element.children[1].children[0].classList.remove('bi-chevron-right');
+            } else if (element.children[1].children[0].classList.contains('bi-chevron-down')) {
+                element.children[1].classList.add('bg-primary');
+                element.children[1].classList.add('text-white');
+                element.children[1].children[0].classList.add('bi-chevron-right');
+                element.children[1].children[0].classList.remove('bi-chevron-down');
+            }
+        })
+    });
+
 });
 
 $('.go-top').on('click', () => {
@@ -36,4 +67,3 @@ $('.go-top').on('click', () => {
         scrollTop: 0
     });
 })
-
