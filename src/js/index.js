@@ -37,23 +37,19 @@ $(document).ready(() => {
             e.preventDefault();
             element.classList.toggle('open');
             if (element.children[1].children[0].classList.contains('bi-plus-lg')) {
-                element.children[1].classList.add('bg-primary');
-                element.children[1].classList.add('text-white');
+
                 element.children[1].children[0].classList.add('bi-dash-lg');
                 element.children[1].children[0].classList.remove('bi-plus-lg');
             } else if (element.children[1].children[0].classList.contains('bi-dash-lg')) {
-                element.children[1].classList.remove('bg-primary');
-                element.children[1].classList.remove('text-white');
+
                 element.children[1].children[0].classList.add('bi-plus-lg');
                 element.children[1].children[0].classList.remove('bi-dash-lg');
             } else if (element.children[1].children[0].classList.contains('bi-chevron-right')) {
-                element.children[1].classList.add('bg-primary');
-                element.children[1].classList.add('text-white');
+
                 element.children[1].children[0].classList.add('bi-chevron-down');
                 element.children[1].children[0].classList.remove('bi-chevron-right');
             } else if (element.children[1].children[0].classList.contains('bi-chevron-down')) {
-                element.children[1].classList.add('bg-primary');
-                element.children[1].classList.add('text-white');
+
                 element.children[1].children[0].classList.add('bi-chevron-right');
                 element.children[1].children[0].classList.remove('bi-chevron-down');
             }

@@ -407,25 +407,23 @@ body {
 }
 
 /* owl carousel nav edit */
-.owl-theme .owl-nav {
-}
 .owl-carousel .owl-prev {
     background: url('../images/previous.png') no-repeat scroll 0 0;
     position: absolute !important;
     height: inherit !important;
     width: inherit !important;
-    left: -9rem !important;
+    left: -5rem !important;
     top: 50% !important;
-    transform: translate(0px, -50%) !important;
+    transform: translate(65px, -50%) !important;
 }
 .owl-carousel .owl-next {
     background: url('../images/next.png') no-repeat scroll -24px 0px;
     position: absolute !important;
-    right: -9rem !important;
+    right: -5rem !important;
     height: inherit !important;
     width: inherit !important;
     top: 50% !important;
-    transform: translate(0px, -50%) !important;
+    transform: translate(-65px, -50%) !important;
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover {
@@ -453,4 +451,43 @@ body {
     opacity: 0;
     padding: 0px;
     transition: all 0.2s ease-in-out;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select {
+    background: transparent;
+}
+
+.product-carousel {
+    width: 850px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-details {
+    position: absolute;
+    bottom: 6rem;
+}
+
+@media screen and (max-width: 991px) {
+    .product-details {
+        width: 100%;
+        height: auto;
+        position: unset;
+        bottom: unset;
+        left: unset;
+    }
+
+    .product-carousel {
+        width: auto;
+    }
+
+    .owl-carousel .owl-item img {
+        width: auto !important;
+    }
 }

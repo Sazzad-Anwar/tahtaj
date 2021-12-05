@@ -353,6 +353,7 @@
             </header>
         </nav>
 
+        <!-- search area & popular categories-->
         <section class="h-auto flex flex-col justify-center items-center relative">
             <div
                 class="
@@ -715,7 +716,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- popular category carousel -->
         <section class="container mt-28 mx-auto">
             <div class="carousel-wrap relative">
                 <div class="owl-carousel owl-theme">
@@ -955,7 +956,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- trending ad section -->
         <section
             class="bg-cover bg-no-repeat bg-center mt-10 w-full py-8"
             style="background-image: url('./src/images/Banner-2.png')"
@@ -1305,7 +1306,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- Popular in Property for Sale and Rent section -->
         <section class="mt-8 w-full pb-8">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center">
@@ -1320,8 +1321,9 @@
                             duration-300
                             ease-in-out
                         "
-                        >View all</a
                     >
+                        View all
+                    </a>
                 </div>
                 <div
                     class="
@@ -1671,14 +1673,14 @@
                 </div>
             </div>
         </section>
-
+        <!-- Popular in Used Motors for Sale section -->
         <section
             class="bg-cover bg-no-repeat bg-center mt-10 w-full py-8"
             style="background-image: url('./src/images/Banner-4.png')"
         >
             <div class="container mx-auto">
                 <div class="flex justify-between items-center">
-                    <h1 class="text-2xl font-medium text-white">Trending Ads</h1>
+                    <h1 class="text-2xl font-medium text-white">Popular in Used Motors for Sale</h1>
                     <a
                         href="#"
                         class="
@@ -1983,11 +1985,11 @@
                 </div>
             </div>
         </section>
-
+        <!-- Popular Locations section -->
         <section class="mt-8 w-full pb-8">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center">
-                    <h1 class="text-2xl font-medium">Popular in Property for Sale and Rent</h1>
+                    <h1 class="text-2xl font-medium">Popular Locations</h1>
                 </div>
                 <div
                     class="
@@ -2239,7 +2241,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- Popular in Used Electronics for Sale -->
         <section
             class="bg-cover bg-no-repeat bg-center mt-10 w-full py-8"
             style="background-image: url('./src/images/Banner-5.png')"
@@ -2562,7 +2564,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- Popular in Used General Items for Sale Section -->
         <section class="mt-8 w-full pb-8">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center">
@@ -2892,7 +2894,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- footer -->
         <footer
             class="bg-cover bg-no-repeat bg-center mt-10 w-full py-8 lg:pt-14 pb-8"
             style="background-image: url('./src/images/banner-6.png')"
@@ -3139,6 +3141,7 @@
                 </div>
             </div>
         </footer>
+        <!-- royex credit -->
         <footer
             class="bg-cover bg-no-repeat bg-center w-full"
             style="background-image: url('./src/images/footer.png')"
@@ -3205,47 +3208,6 @@
                     "<img src='./src/images/previous.png' />",
                     "<img src='./src/images/next.png' />",
                 ],
-                autoplay: true,
-                autoplayTimeout: 1500,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false,
-                        margin: 10,
-                        stagePadding: 0,
-                    },
-                    600: {
-                        items: 1,
-                        nav: false,
-                        margin: 10,
-                        stagePadding: 0,
-                    },
-                    1024: {
-                        items: 2,
-                        nav: true,
-                        margin: 10,
-                        stagePadding: 0,
-                    },
-                    1200: {
-                        items: 3,
-                        nav: true,
-                        margin: 50,
-                        stagePadding: 10,
-                    },
-                    1500: {
-                        items: 4,
-                        nav: true,
-                        margin: 50,
-                        stagePadding: 10,
-                    },
-                },
-            });
-
-            $('.trending-ads').owlCarousel({
-                dots: false,
-                loop: true,
-                nav: false,
                 autoplay: true,
                 autoplayTimeout: 1500,
                 autoplayHoverPause: true,

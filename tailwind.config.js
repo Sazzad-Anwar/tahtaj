@@ -17,11 +17,21 @@ module.exports = {
       'primary': '#302D86',
       'secondary': '#00ACE1',
       'tertiary': '#838383',
+      'paste': '#00BFA5'
     }),
     backgroundColor: theme => ({
       ...theme('colors'),
       'primary': '#302D86',
-      'secondary': '#00ACE1'
+      'secondary': '#00ACE1',
+      'blurBg': '#00000078',
+      'paste': '#00BFA5'
+    }),
+    borderColor: theme => ({
+      DEFAULT: theme('colors.gray.300', 'currentColor'),
+      'primary': '#302D86',
+      'secondary': '#00ACE1',
+      'tertiary': '#838383',
+      'paste': '#00BFA5'
     }),
     extend: {},
   },
