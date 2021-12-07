@@ -27,6 +27,9 @@
         <link rel="stylesheet" href="./src/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="./src/css/owl.theme.default.min.css" />
 
+        <!-- alpine js -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
         <title>Tahtaj | Product Details</title>
     </head>
     <body>
@@ -385,7 +388,7 @@
                         <i class="bi bi-chevron-right mr-3 text-xs"></i>
                         <p class="text-lg mr-3">Classified Listings</p>
                         <i class="bi bi-chevron-right mr-3 text-xs"></i>
-                        <p class="text-lg">BMW 40I Xline</p>
+                        <p class="text-lg text-gray-300">BMW 40I Xline</p>
                     </div>
                 </div>
             </div>
@@ -666,24 +669,24 @@
 
                 <hr />
 
-                <section class="mt-9">
+                <section x-data="{open:true}" class="mt-9">
                     <div class="grid grid-cols-2 lg:grid-cols-5 text-center">
                         <p
-                            class="
-                                font-semibold
-                                text-base text-secondary
-                                py-4
-                                border-b border-secondary
-                                cursor-pointer
-                            "
+                            x-on:click="open = !open"
+                            x-bind:class="open? 'border-secondary text-secondary font-semibold text-base py-4 border-b cursor-pointer':'text-base py-4 cursor-pointer'"
                         >
                             Specification
                         </p>
-                        <p class="font-semibold text-base py-4 cursor-pointer">Description</p>
+                        <p
+                            x-on:click="open = !open"
+                            x-bind:class="!open? 'border-secondary text-secondary font-semibold text-base py-4 border-b cursor-pointer':'text-base py-4 cursor-pointer'"
+                        >
+                            Description
+                        </p>
                     </div>
-                    <div class="specification p-8 shadow-lg rounded-sm">
-                        <div class="h-auto lg:h-96">
-                            <ul class="list-none" style="columns: 2">
+                    <div x-bind:class="!open ? 'hidden':'specification p-8 shadow-lg rounded-lg'">
+                        <div class="h-auto">
+                            <ul class="list-none w-auto lg:w-96">
                                 <li class="flex justify-between items-center py-3">
                                     <span class="font-semibold text-sm">Door</span>
                                     <span class="text-tertiary text-sm">5+ doors</span>
@@ -736,6 +739,49 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+
+                    <div x-bind:class="open ? 'hidden':'specification p-8 shadow-lg rounded-lg'">
+                        <div class="h-auto">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nisi
+                                ea? Doloribus consequatur temporibus at. Ab minus odio ea
+                                consequatur repellat quo officiis numquam minima, voluptate quaerat
+                                rem earum assumenda nisi nemo quos hic explicabo veniam debitis
+                                aliquam repellendus aperiam. Sint recusandae beatae rem alias
+                                laudantium optio quaerat error fugit, veritatis corrupti consequatur
+                                aspernatur! Culpa assumenda voluptas saepe impedit exercitationem
+                                dolores, ut incidunt earum fugit dolorem modi dolore, harum cum
+                                dolorum necessitatibus eius ea rerum, quam hic doloribus?
+                                Accusantium iusto voluptatem, earum perspiciatis soluta aliquid
+                                nihil saepe ad natus consequuntur? Laboriosam quas eligendi odit
+                                perspiciatis voluptate deleniti nostrum architecto aliquam.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="my-10">
+                    <h1 class="text-2xl font-medium my-2">Locations</h1>
+                    <p class="flex items-center">
+                        <img
+                            class="mr-2"
+                            src="./src/images/location-icon-small.png"
+                            alt="location"
+                        />
+                        <span class="text-xs text-tertiary">DIFC, Dubai, UAE</span>
+                    </p>
+
+                    <div class="my-3">
+                        <iframe
+                            class="border rounded-xl"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7219.557218584555!2d55.27340777672259!3d25.210687542466584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428f0d45e889%3A0x5c0e0c234547d18!2sTrade%20Centre%20-%20DIFC%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sbd!4v1638860823728!5m2!1sen!2sbd"
+                            width="100%"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen="true"
+                            loading="lazy"
+                        ></iframe>
                     </div>
                 </section>
             </div>
@@ -860,7 +906,7 @@
                 </div>
                 <div class="shadow-lg rounded-lg p-7 mt-4">
                     <div class="flex items-center">
-                        <img src="./src/images/delivery-logo.png" alt="delivery-logo" />
+                        <img src="./src/images/delivery-logo-bg.png" alt="delivery-logo" />
                         <p class="text-xs ml-4">
                             Be sure to verify the item upon delivery and check the funtionality
                             before you make the payment.
@@ -873,6 +919,329 @@
                             before you make the payment.
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular in Used Motors for Sale section -->
+        <section class="bg-cover bg-no-repeat bg-center mt-10 w-full my-10">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-2xl font-medium">You May Also Like</h1>
+                    <a
+                        href="search-page-list-view.html"
+                        class="
+                            text-sm
+                            font-medium
+                            hover:text-gray-800
+                            transition-colors
+                            duration-300
+                            ease-in-out
+                        "
+                    >
+                        View all
+                    </a>
+                </div>
+                <div
+                    class="
+                        mt-4
+                        grid grid-cols-1
+                        sm:grid-cols-2
+                        md:grid-cols-3
+                        lg:grid-cols-4
+                        xl:grid-cols-6
+                        gap-4
+                    "
+                >
+                    <a
+                        href="#"
+                        class="
+                            bg-white
+                            p-4
+                            border
+                            rounded-xl
+                            animate__animated animate__fadeIn
+                            wow
+                            shadow-xl
+                        "
+                    >
+                        <div class="rounded-xl overflow-hidden flex justify-center">
+                            <img
+                                class="
+                                    sm:h-36 sm:w-auto
+                                    w-full
+                                    h-auto
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                "
+                                src="./src/images/car-1.png"
+                                alt="ad-1"
+                            />
+                        </div>
+
+                        <div class="flex items-center mt-3">
+                            <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                            <p class="text-sm truncate">
+                                Mazda CX-5 GT-X 2014 Top of the line + Full S...
+                            </p>
+                        </div>
+                        <p class="text-xl font-semibold text-secondary mt-1">AED 30,500</p>
+                        <div class="flex items-center">
+                            <img
+                                class="mr-1"
+                                src="./src/images/location-icon-small.png"
+                                alt="location"
+                            />
+                            <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="
+                            bg-white
+                            p-4
+                            border
+                            rounded-xl
+                            animate__animated animate__fadeIn
+                            wow
+                            shadow-xl
+                            animate__delay-1s
+                        "
+                    >
+                        <div class="rounded-xl overflow-hidden flex justify-center">
+                            <img
+                                class="
+                                    sm:h-36 sm:w-auto
+                                    w-full
+                                    h-auto
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    animate__delay-1s
+                                "
+                                src="./src/images/car-2.png"
+                                alt="ad-1"
+                            />
+                        </div>
+
+                        <div class="flex items-center mt-3">
+                            <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                            <p class="text-sm truncate">
+                                A Super Clean Hyundai Accent 1.6 Model...
+                            </p>
+                        </div>
+                        <p class="text-xl font-semibold text-secondary mt-1">AED 25,200</p>
+                        <div class="flex items-center">
+                            <img
+                                class="mr-1"
+                                src="./src/images/location-icon-small.png"
+                                alt="location"
+                            />
+                            <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="
+                            bg-white
+                            p-4
+                            border
+                            rounded-xl
+                            animate__animated animate__fadeIn
+                            wow
+                            shadow-xl
+                            animate__delay-2s
+                        "
+                    >
+                        <div class="rounded-xl overflow-hidden flex justify-center">
+                            <img
+                                class="
+                                    sm:h-36 sm:w-auto
+                                    w-full
+                                    h-auto
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    animate__delay-2s
+                                "
+                                src="./src/images/car-3.png"
+                                alt="ad-1"
+                            />
+                        </div>
+
+                        <div class="flex items-center mt-3">
+                            <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                            <p class="text-sm truncate">Silverado 2500 HD Diesel - Brand New...</p>
+                        </div>
+                        <p class="text-xl font-semibold text-secondary mt-1">AED 60,000</p>
+                        <div class="flex items-center">
+                            <img
+                                class="mr-1"
+                                src="./src/images/location-icon-small.png"
+                                alt="location"
+                            />
+                            <p class="text-xs text-tertiary">Business Bay - UAE</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="
+                            bg-white
+                            p-4
+                            border
+                            rounded-xl
+                            animate__animated animate__fadeIn
+                            wow
+                            shadow-xl
+                            animate__delay-3s
+                        "
+                    >
+                        <div class="rounded-xl overflow-hidden flex justify-center">
+                            <img
+                                class="
+                                    sm:h-36 sm:w-auto
+                                    w-full
+                                    h-auto
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    animate__delay-3s
+                                "
+                                src="./src/images/car-4.png"
+                                alt="ad-1"
+                            />
+                        </div>
+
+                        <div class="flex items-center mt-3">
+                            <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                            <p class="text-sm truncate">
+                                Farrari Launch Addition 2020 Model Gcc V6 With...
+                            </p>
+                        </div>
+                        <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
+                        <div class="flex items-center">
+                            <img
+                                class="mr-1"
+                                src="./src/images/location-icon-small.png"
+                                alt="location"
+                            />
+                            <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="
+                            bg-white
+                            p-4
+                            border
+                            rounded-xl
+                            animate__animated animate__fadeIn
+                            wow
+                            shadow-xl
+                            animate__delay-4s
+                        "
+                    >
+                        <div class="rounded-xl overflow-hidden flex justify-center">
+                            <img
+                                class="
+                                    sm:h-36 sm:w-auto
+                                    w-full
+                                    h-auto
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    animate__delay-4s
+                                "
+                                src="./src/images/car-5.png"
+                                alt="ad-1"
+                            />
+                        </div>
+
+                        <div class="flex items-center mt-3">
+                            <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                            <p class="text-sm truncate">
+                                2016 Ford Figo, White, Automatic + Full S...
+                            </p>
+                        </div>
+                        <p class="text-xl font-semibold text-secondary mt-1">AED 20,500</p>
+                        <div class="flex items-center">
+                            <img
+                                class="mr-1"
+                                src="./src/images/location-icon-small.png"
+                                alt="location"
+                            />
+                            <p class="text-xs text-tertiary">Dubai - UAE</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="
+                            bg-white
+                            p-4
+                            border
+                            rounded-xl
+                            animate__animated animate__fadeIn
+                            wow
+                            shadow-xl
+                            animate__delay-5s
+                        "
+                    >
+                        <div class="rounded-xl overflow-hidden flex justify-center">
+                            <img
+                                class="
+                                    sm:h-36 sm:w-auto
+                                    w-full
+                                    h-auto
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    animate__delay-5s
+                                "
+                                src="./src/images/car-6.png"
+                                alt="ad-1"
+                            />
+                        </div>
+
+                        <div class="flex items-center mt-3">
+                            <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                            <p class="text-sm truncate">
+                                Range Rover Sport Superch- arged Normal wear
+                            </p>
+                        </div>
+                        <p class="text-xl font-semibold text-secondary mt-1">AED 35,200</p>
+                        <div class="flex items-center">
+                            <img
+                                class="mr-1"
+                                src="./src/images/location-icon-small.png"
+                                alt="location"
+                            />
+                            <p class="text-xs text-tertiary">Town Square - UAE</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1247,7 +1616,7 @@
                 },
             });
 
-            let thumbImages = $('.thumb-img');
+            let thumbImages = document.querySelectorAll('.thumb-img');
 
             thumbImages.forEach((img) => {
                 img.addEventListener('click', () => {

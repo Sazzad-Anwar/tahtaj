@@ -474,6 +474,11 @@ select {
     bottom: 6rem;
 }
 
+/* .specification ul {
+    align-items: flex-start;
+    columns: 2;
+} */
+
 @media screen and (max-width: 991px) {
     .product-details {
         width: 100%;

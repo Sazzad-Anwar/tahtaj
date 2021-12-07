@@ -33,7 +33,11 @@ module.exports = {
       'tertiary': '#838383',
       'paste': '#00BFA5'
     }),
-    extend: {},
+    extend: {
+      spacing: {
+        '550': '34.3rem'
+      }
+    },
   },
   variants: {
     extend: {},
