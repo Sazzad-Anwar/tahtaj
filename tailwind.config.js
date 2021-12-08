@@ -24,7 +24,8 @@ module.exports = {
       'primary': '#302D86',
       'secondary': '#00ACE1',
       'blurBg': '#00000078',
-      'paste': '#00BFA5'
+      'paste': '#00BFA5',
+      'lightBlue': '#EAE9F3'
     }),
     borderColor: theme => ({
       DEFAULT: theme('colors.gray.300', 'currentColor'),
@@ -35,7 +36,8 @@ module.exports = {
     }),
     extend: {
       spacing: {
-        '550': '34.3rem'
+        '550': '34.3rem',
+        '990': '61.8rem'
       }
     },
   },

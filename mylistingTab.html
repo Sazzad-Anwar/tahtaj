@@ -1,0 +1,3780 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./src/images/logo.png" type="image/png" />
+        <meta name="theme-color" content="#4285f4" />
+        <meta
+            name="description"
+            content="A website template with tailwind CSS, Animate.js, Wow.js, jQuery, Bootstrap icons, Material Icons"
+        />
+        <link rel="stylesheet" href="./src/css/tailwind.css" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+        <!-- Select2 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Animate csss -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="./src/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./src/css/owl.theme.default.min.css" />
+
+        <!-- alpine js -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+        <title>Tahtaj | Product Details</title>
+    </head>
+    <body>
+        <!-- nav -->
+        <nav class="lg:container mx-auto">
+            <header class="header">
+                <a href="/" class="logo">
+                    <img src="./src/images/full-logo.png" alt="logo" />
+                </a>
+                <div class="menu-btn">
+                    <div class="menu-btn__lines"></div>
+                </div>
+                <ul class="menu-items">
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >Property</a
+                        >
+                    </li>
+                    <li class="hover-true">
+                        <a
+                            href="#"
+                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                        >
+                            Motores
+                        </a>
+                    </li>
+                    <li class="hover-true">
+                        <a
+                            href="#"
+                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                        >
+                            Electronics
+                        </a>
+                    </li>
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >General Items</a
+                        >
+                    </li>
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >Jobs</a
+                        >
+                    </li>
+                    <li class="hover-true">
+                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                            >Whole Seller</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                        >
+                            <img src="./src/images/search-icon.png" alt="search" />
+                        </a>
+                    </li>
+                    <li class="dropdown w-full lg:w-40">
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-base
+                                2xl:text-bastext-sm
+                                expand-btn
+                                flex
+                                justify-start
+                                lg:justify-center
+                                items-center
+                            "
+                        >
+                            <img
+                                class="h-4 w-auto mx-1"
+                                src="./src/images/location-icon.png"
+                                alt="location"
+                            />
+                            <span> Dubai </span>
+                            <img
+                                class="h-auto w-auto mx-3"
+                                src="./src/images/arrow-down.png"
+                                alt="location"
+                            />
+                        </a>
+                        <ul class="dropdown-menu expandable">
+                            <li
+                                class="
+                                    bg-white
+                                    border-b border-transparent
+                                    hover:border-blue-800 hover:bg-blue-100
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2"> Sharjah </a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2">Abu Dhabi</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2">Fujairah</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2"
+                                    >Ras al Khaimah</a
+                                >
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item text-center text-xs py-2"
+                                    >Umm Al Quwain</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-base
+                                2xl:text-bastext-sm
+                                expand-btn
+                                flex
+                                justify-start
+                                lg:justify-center
+                                items-center
+                            "
+                        >
+                            <img
+                                class="h-4 w-auto mr-1"
+                                src="./src/images/language.png"
+                                alt="location"
+                            />
+                            <span> English </span>
+                            <img
+                                class="h-auto w-auto ml-3"
+                                src="./src/images/arrow-down.png"
+                                alt="location"
+                            />
+                        </a>
+                        <ul class="dropdown-menu expandable">
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Arabic</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Chinese</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Russian</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-base
+                                text-sm2xl:text-base
+                                relative
+                            "
+                        >
+                            <img src="./src/images/notification.png" alt="notification" />
+                            <div
+                                class="
+                                    absolute
+                                    top-.5
+                                    -right-1
+                                    rounded-full
+                                    lg:text-xs
+                                    text-white
+                                    bg-red-700
+                                    px-1
+                                    py-.5
+                                "
+                                style="font-size: 10px"
+                            >
+                                2
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown w-24">
+                        <a
+                            href="#"
+                            class="
+                                menu-item
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-sm
+                                2xl:text-base
+                                flex
+                                justify-center
+                            "
+                        >
+                            <img src="./src/images/account-icon.png" alt="account-icon" />
+                        </a>
+                        <ul class="dropdown-menu expandable">
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Login</a>
+                            </li>
+                            <li
+                                class="
+                                    bg-white
+                                    hover:bg-blue-100
+                                    border-b border-transparent
+                                    hover:border-blue-800
+                                    transition
+                                    ease-in
+                                    duration-500
+                                "
+                            >
+                                <a href="#" class="menu-item py-2 text-xs">Registration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="group">
+                        <a
+                            href="#"
+                            class="
+                                bg-primary
+                                text-white
+                                px-3
+                                py-2
+                                lg:px-4 lg:py-2
+                                xl:px-6 xl:py-2
+                                2xl:px-8 2xl:py-4
+                                md:text-xs
+                                lg:text-xs
+                                xl:text-sm
+                                2xl:text-base
+                                shadow-none
+                                group-hover:text-white group-hover:shadow-2xl
+                                transition
+                                ease-in-out
+                                duration-1000
+                                rounded-lg
+                                w-32
+                                lg:w-auto
+                            "
+                        >
+                            Post your AD
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </nav>
+        <!-- bredcrumb section -->
+        <section class="h-auto flex flex-col justify-center items-center relative">
+            <div
+                class="
+                    overflow-x-hidden
+                    py-10
+                    w-full
+                    h-full
+                    flex
+                    justify-center
+                    items-center
+                    bg-cover bg-no-repeat bg-center
+                "
+                style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('./src/images/Banner-1.png');
+                "
+            >
+                <div class="container py-20 text-center">
+                    <h1 class="text-4xl font-semibold text-white">Search page</h1>
+                    <div class="text-lg text-white flex flex-wrap justify-center items-center mt-3">
+                        <p class="text-lg mr-3">Home</p>
+                        <i class="bi bi-chevron-right mr-3 text-xs"></i>
+                        <p class="text-lg mr-3">Classified Listings</p>
+                        <i class="bi bi-chevron-right mr-3 text-xs"></i>
+                        <p class="text-lg text-gray-300">BMW 40I Xline</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main content -->
+        <section class="flex items-start mt-12 w-full container mx-auto">
+            <form class="mr-3 hidden lg:block w-96" id="filter-option">
+                <div class="shadow-xl rounded-none lg:rounded-lg overflow-hidden">
+                    <h1 class="text-2xl font-medium bg-lightBlue py-6 px-8">Menu</h1>
+                    <ul class="list-none">
+                        <li
+                            class="
+                                text-xl
+                                py-5
+                                px-8
+                                bg-transparent
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                                cursor-pointer
+                            "
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img
+                                        class="mr-2"
+                                        src="./src/images/user-icon-black.png"
+                                        alt="profile"
+                                    />
+                                    <p class="text-xl">Profile</p>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </li>
+
+                        <li
+                            class="
+                                text-xl
+                                py-5
+                                px-8
+                                bg-transparent
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                                cursor-pointer
+                                active-btn
+                            "
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img
+                                        class="mr-2"
+                                        src="./src/images/clipboard-icon.png"
+                                        alt="listing"
+                                    />
+                                    <p class="text-xl">My Listing</p>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </li>
+
+                        <li
+                            class="
+                                text-xl
+                                py-5
+                                px-8
+                                bg-transparent
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                                cursor-pointer
+                            "
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img class="mr-2" src="./src/images/swap-icon.png" alt="swap" />
+                                    <p class="text-xl">Swap Request</p>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </li>
+
+                        <li
+                            class="
+                                text-xl
+                                py-5
+                                px-8
+                                bg-transparent
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                                cursor-pointer
+                            "
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img
+                                        class="mr-2"
+                                        src="./src/images/clipboard-icon.png"
+                                        alt="jobs"
+                                    />
+                                    <p class="text-xl">Jobs</p>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </li>
+
+                        <li
+                            class="
+                                text-xl
+                                py-5
+                                px-8
+                                bg-transparent
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                                cursor-pointer
+                            "
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img
+                                        class="mr-2"
+                                        src="./src/images/chat-icon.png"
+                                        alt="chats"
+                                    />
+                                    <p class="text-xl">Chats</p>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </li>
+
+                        <li
+                            class="
+                                text-xl
+                                py-5
+                                px-8
+                                bg-transparent
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                                cursor-pointer
+                            "
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img class="mr-2" src="./src/images/love-icon.png" alt="love" />
+                                    <p class="text-xl">Favourites</p>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </li>
+
+                        <li
+                            class="
+                                text-xl
+                                py-5
+                                px-8
+                                bg-transparent
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                                cursor-pointer
+                            "
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img
+                                        class="mr-2"
+                                        src="./src/images/logout-icon.png"
+                                        alt="logout"
+                                    />
+                                    <p class="text-xl">Logout</p>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <div x-data="{open:true}" class="p-0 lg:p-8 w-full shadow-lg rounded-lg">
+                <h1 class="text-4xl font-medium my-5">My Listing</h1>
+                <hr />
+                <div class="grid grid-cols-2 lg:grid-cols-5 text-center mt-11 border-b">
+                    <p
+                        x-on:click="open = !open"
+                        x-bind:class="open? 'border-secondary py-4 border-b-2 cursor-pointer transition duration-300 ease-in-out':'text-base py-4 cursor-pointer opacity-40'"
+                    >
+                        <span class="text-xl font-semibold">Live Post</span>
+                        <span class="text-base text-white py-1 px-4 bg-secondary rounded-xl ml-5">
+                            45
+                        </span>
+                    </p>
+                    <p
+                        x-on:click="open = !open"
+                        x-bind:class="!open? 'border-secondary py-4 border-b-2 cursor-pointer transition duration-300 ease-in-out':'text-base py-4 cursor-pointer opacity-40'"
+                    >
+                        <span class="text-xl font-semibold">Pending Post</span>
+                        <span class="text-base text-white py-1 px-4 bg-secondary rounded-xl ml-5">
+                            45
+                        </span>
+                    </p>
+                </div>
+                <div
+                    x-bind:class="open ?'mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4':'hidden'"
+                >
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-1.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Mazda CX-5 GT-X 2014 Top of the line + Full S...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 30,500</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                            <p class="text-xs mt-1 text-tertiary">Posted On 20 Sep, 2021</p>
+                            <div class="flex items-center">
+                                <img class="mr-2" src="./src/images/eye-icon.png" alt="eye" />
+                                <p class="text-xs mt-1 text-tertiary">87 Views</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-1s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-2.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    A Super Clean Hyundai Accent 1.6 Model...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 25,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-2s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-2s
+                                    "
+                                    src="./src/images/car-3.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Silverado 2500 HD Diesel - Brand New...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 60,000</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Business Bay - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-3s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-3s
+                                    "
+                                    src="./src/images/car-4.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Farrari Launch Addition 2020 Model Gcc V6 With...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+                    <!-- 2nd row -->
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-4s
+                                    "
+                                    src="./src/images/car-5.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    2016 Ford Figo, White, Automatic + Full S...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 20,500</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Dubai - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-1s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-5s
+                                    "
+                                    src="./src/images/car-6.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Range Rover Sport Superch- arged Normal wear
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 35,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Town Square - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-2s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-3s
+                                    "
+                                    src="./src/images/car-4.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Farrari Launch Addition 2020 Model Gcc V6 With...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-3s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-2s
+                                    "
+                                    src="./src/images/car-3.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Silverado 2500 HD Diesel - Brand New...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 60,000</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Business Bay - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <!-- 3rd row -->
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-2.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    A Super Clean Hyundai Accent 1.6 Model...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 25,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-1s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-1.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Mazda CX-5 GT-X 2014 Top of the line + Full S...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 30,500</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-2s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-5s
+                                    "
+                                    src="./src/images/car-6.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Range Rover Sport Superch- arged Normal wear
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 35,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Town Square - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-3s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-3s
+                                    "
+                                    src="./src/images/car-4.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Farrari Launch Addition 2020 Model Gcc V6 With...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-primary
+                                    border border-primary
+                                    opacity-100
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                    mt-1
+                                "
+                            >
+                                Boost Ad
+                            </a>
+                            <a href="#" class="mt-1 text-xs text-white">Get more views</a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    x-bind:class="!open ?'mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4':'hidden'"
+                >
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-1.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Mazda CX-5 GT-X 2014 Top of the line + Full S...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 30,500</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-1s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-2.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    A Super Clean Hyundai Accent 1.6 Model...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 25,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-2s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-2s
+                                    "
+                                    src="./src/images/car-3.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Silverado 2500 HD Diesel - Brand New...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 60,000</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Business Bay - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-3s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-3s
+                                    "
+                                    src="./src/images/car-4.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Farrari Launch Addition 2020 Model Gcc V6 With...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+                    <!-- 2nd row -->
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-4s
+                                    "
+                                    src="./src/images/car-5.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    2016 Ford Figo, White, Automatic + Full S...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 20,500</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Dubai - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-1s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-5s
+                                    "
+                                    src="./src/images/car-6.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Range Rover Sport Superch- arged Normal wear
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 35,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Town Square - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-2s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-3s
+                                    "
+                                    src="./src/images/car-4.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Farrari Launch Addition 2020 Model Gcc V6 With...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-3s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-2s
+                                    "
+                                    src="./src/images/car-3.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Silverado 2500 HD Diesel - Brand New...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 60,000</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Business Bay - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <!-- 3rd row -->
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-2.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    A Super Clean Hyundai Accent 1.6 Model...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 25,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-1s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/car-1.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Mazda CX-5 GT-X 2014 Top of the line + Full S...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 30,500</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-2s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-5s
+                                    "
+                                    src="./src/images/car-6.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Range Rover Sport Superch- arged Normal wear
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 35,200</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Town Square - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="
+                            border
+                            rounded-xl
+                            shadow-lg
+                            animate__animated animate__fadeIn animate__delay-3s
+                            wow
+                            group
+                            relative
+                            overflow-hidden
+                        "
+                    >
+                        <div class="bg-white p-4">
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36 sm:w-auto
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                        animate__delay-3s
+                                    "
+                                    src="./src/images/car-4.png"
+                                    alt="ad-1"
+                                />
+                            </div>
+
+                            <div class="flex items-center mt-3">
+                                <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
+                                <p class="text-sm truncate">
+                                    Farrari Launch Addition 2020 Model Gcc V6 With...
+                                </p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
+                            </div>
+                        </div>
+                        <div
+                            class="
+                                absolute
+                                bg-blurBg
+                                flex flex-col
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                inset-0
+                                justify-center
+                                items-center
+                                w-full
+                                h-full
+                            "
+                        >
+                            <a
+                                href="product-details.html"
+                                class="
+                                    px-12
+                                    py-4
+                                    bg-secondary
+                                    border border-secondary
+                                    opacity-100ry
+                                    hover:opacity-80
+                                    transition
+                                    duration-300
+                                    ease-in-out
+                                    text-white text-sm
+                                    rounded-lg
+                                "
+                            >
+                                View Ad
+                            </a>
+                        </div>
+
+                        <button
+                            class="
+                                absolute
+                                opacity-0
+                                group-hover:opacity-100
+                                transition
+                                duration-300
+                                ease-in-out
+                                right-4
+                                top-4
+                                p-3
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img cla src="./src/images/delete-icon.png" alt="delete" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- pagination -->
+                <!-- for active page add the class 'bg-primary text-white' -->
+                <div class="flex justify-center w-full mt-14">
+                    <div class="flex items-center">
+                        <a
+                            href="#"
+                            class="
+                                mx-1
+                                lg:mx-2
+                                rounded-full
+                                px-3
+                                py-2
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                            "
+                        >
+                            <i class="bi bi-chevron-left text-xl"></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="
+                                mx-1
+                                lg:mx-2
+                                rounded-full
+                                px-4
+                                py-2
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                            "
+                        >
+                            1
+                        </a>
+                        <a
+                            href="#"
+                            class="
+                                mx-1
+                                lg:mx-2
+                                rounded-full
+                                px-4
+                                py-2
+                                bg-primary
+                                text-white
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                            "
+                        >
+                            2
+                        </a>
+                        <a
+                            href="#"
+                            class="
+                                mx-1
+                                lg:mx-2
+                                rounded-full
+                                px-4
+                                py-2
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                            "
+                        >
+                            3
+                        </a>
+                        <a
+                            href="#"
+                            class="
+                                mx-1
+                                lg:mx-2
+                                rounded-full
+                                px-4
+                                py-2
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                            "
+                        >
+                            4
+                        </a>
+                        <a
+                            href="#"
+                            class="
+                                mx-1
+                                lg:mx-2
+                                rounded-full
+                                px-4
+                                py-2
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                            "
+                        >
+                            5
+                        </a>
+                        <a
+                            href="#"
+                            class="
+                                mx-1
+                                lg:mx-2
+                                rounded-full
+                                px-3
+                                py-2
+                                hover:bg-primary hover:text-white
+                                transition
+                                duration-300
+                                ease-in-out
+                            "
+                        >
+                            <i class="bi bi-chevron-right text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main content -->
+
+        <!-- footer -->
+        <footer
+            class="bg-cover bg-no-repeat bg-center mt-10 w-full py-8 lg:pt-14 pb-8"
+            style="background-image: url('./src/images/banner-6.png')"
+        >
+            <div class="container mx-auto text-white">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <ul class="list-none">
+                        <li class="text-xl font-semibold flex flex-col footer-title pb-8">
+                            Company
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="aboutus.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                About Us
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="careers.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Careers
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="contactus.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="privacy-policy.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="terms-condition.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 flex items-center">
+                            <a
+                                href="https://facebook.com"
+                                class="
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-200
+                                    ease-in-out
+                                "
+                                target="__blank"
+                            >
+                                <img src="./src/images/facebook.png" alt="facebook" />
+                            </a>
+                            <a
+                                href="https://twitter.com"
+                                class="
+                                    mx-6
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-200
+                                    ease-in-out
+                                "
+                                target="__blank"
+                            >
+                                <img src="./src/images/twitter.png" alt="twitter" />
+                            </a>
+                            <a
+                                href="https://linkedin.com"
+                                class="
+                                    transform
+                                    scale-100
+                                    hover:scale-110
+                                    transition
+                                    duration-200
+                                    ease-in-out
+                                "
+                                target="__blank"
+                            >
+                                <img src="./src/images/linkedin.png" alt="linkedin" />
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="text-xl font-semibold flex flex-col footer-title pb-8">
+                            Popular Categories
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="proerty.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Property
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="motors.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Motors
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="electronics.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Electronics
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="general-items.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                General Items
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="jobs.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Jobs
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="whole-salers.html"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Whole Salers
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="text-xl font-semibold flex flex-col footer-title pb-8">UAE</li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="#"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Dubai
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="#"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Abu Dhabi
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="#"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Ras al Khaimah
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="#"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Sharjah
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="#"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Fujairah
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="#"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Ajman
+                            </a>
+                        </li>
+                        <li class="text-sm py-2 group">
+                            <a
+                                href="#"
+                                class="group-hover:text-gray-300 transition duration-300 ease-out"
+                            >
+                                Umm Al Quwain
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="text-xl font-semibold flex flex-col footer-title pb-8">
+                            Download app
+                        </li>
+                        <li
+                            class="
+                                py-1.5
+                                transform
+                                scale-100
+                                hover:scale-105
+                                transition
+                                duration-200
+                                ease-in-out
+                            "
+                        >
+                            <a href="https://facebook.com" target="__blank">
+                                <img src="./src/images/google-play.png" alt="google-play" />
+                            </a>
+                        </li>
+                        <li
+                            class="
+                                py-1.5
+                                transform
+                                scale-100
+                                hover:scale-105
+                                transition
+                                duration-200
+                                ease-in-out
+                            "
+                        >
+                            <a href="https://twitter.com" target="__blank">
+                                <img src="./src/images/apple-store.png" alt="apple-store" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- royex credit -->
+        <footer
+            class="bg-cover bg-no-repeat bg-center w-full"
+            style="background-image: url('./src/images/footer.png')"
+        >
+            <div class="container mx-auto text-white pt-6 pb-6">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <p class="text-sm py-4 lg:py-0">
+                        Copyright 2021
+                        <a href="index.html" class="text-secondary font-semibold">Tahtaj</a> Private
+                        Limited. All Rights Reserved.
+                    </p>
+                    <img
+                        class="py-4 lg:py-0"
+                        src="./src/images/master-visa-logo.png"
+                        alt="visa-master-card"
+                    />
+                    <div class="flex items-center">
+                        <p class="text-sm mr-6 py-4 lg:py-0">
+                            Design and Developed by
+                            <a href="https://royex.ae" class="font-semibold">Royex Technologies</a>
+                        </p>
+                        <a
+                            href="javascript:void(0)"
+                            class="
+                                transform
+                                scale-100
+                                hover:scale-110
+                                transition
+                                duration-200
+                                ease-in-out
+                                go-top
+                            "
+                        >
+                            <img src="./src/images/go-to-top.png" alt="go-top" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- rtl support -->
+        <script src="https://cdn.jsdelivr.net/npm/tailwindcss-rtl@0.8.0/src/index.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="./src/js/owl.carousel.min.js"></script>
+        <!-- Select2 -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <!-- Wow animation 'Animation on scroll' -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./src/js/index.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>

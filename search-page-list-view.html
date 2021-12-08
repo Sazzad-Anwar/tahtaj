@@ -473,7 +473,7 @@
         <!-- absolute inset-0 z-10 h-screen w-full bg-white -->
         <section class="flex items-start mt-12 w-full container mx-auto">
             <form
-                class="mr-3 hidden lg:block" 
+                class="mr-3 hidden lg:block w-96" 
                 id="filter-option"
             >
                 <div class="shadow-xl rounded-none lg:rounded-lg">
@@ -1272,6 +1272,8 @@
                                         w-auto
                                         h-12
                                         px-1
+                                        lg:px-0
+                                        xl:px-1
                                         rounded-lg
                                         border
                                         flex
@@ -1284,6 +1286,8 @@
                                         class="
                                             cursor-pointer
                                             px-4
+                                            lg:px-2
+                                            xl:px-4
                                             w-full
                                             h-full
                                             custom-select
@@ -2167,7 +2171,6 @@
         <script>
             new WOW().init();
             $('.filter-btn').on('click', () => {
-                console.log('hello');
                 if ($('#filter-option').attr('class').trim() !== 'fixed inset-0 z-10 h-full w-full bg-white mr-3 overflow-auto') {
                     $('#filter-option').attr('class','fixed inset-0 z-10 h-full w-full bg-white mr-3 overflow-auto')
                     $('body').addClass('overflow-hidden')
