@@ -30,338 +30,354 @@
         <!-- alpine js -->
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-        <title>Tahtaj | Product Details</title>
+        <title>Tahtaj | My Listing</title>
     </head>
     <body>
         <!-- nav -->
-        <nav class="lg:container mx-auto">
-            <header class="header">
-                <a href="/" class="logo">
-                    <img src="./src/images/full-logo.png" alt="logo" />
-                </a>
-                <div class="menu-btn">
-                    <div class="menu-btn__lines"></div>
-                </div>
-                <ul class="menu-items">
-                    <li class="hover-true">
-                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
-                            >Property</a
-                        >
-                    </li>
-                    <li class="hover-true">
-                        <a
-                            href="#"
-                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
-                        >
-                            Motores
-                        </a>
-                    </li>
-                    <li class="hover-true">
-                        <a
-                            href="#"
-                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
-                        >
-                            Electronics
-                        </a>
-                    </li>
-                    <li class="hover-true">
-                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
-                            >General Items</a
-                        >
-                    </li>
-                    <li class="hover-true">
-                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
-                            >Jobs</a
-                        >
-                    </li>
-                    <li class="hover-true">
-                        <a href="#" class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
-                            >Whole Seller</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
-                        >
-                            <img src="./src/images/search-icon.png" alt="search" />
-                        </a>
-                    </li>
-                    <li class="dropdown w-full lg:w-40">
-                        <a
-                            href="#"
-                            class="
-                                menu-item
-                                md:text-xs
-                                lg:text-xs
-                                xl:text-base
-                                2xl:text-bastext-sm
-                                expand-btn
-                                flex
-                                justify-start
-                                lg:justify-center
-                                items-center
-                            "
-                        >
-                            <img
-                                class="h-4 w-auto mx-1"
-                                src="./src/images/location-icon.png"
-                                alt="location"
-                            />
-                            <span> Dubai </span>
-                            <img
-                                class="h-auto w-auto mx-3"
-                                src="./src/images/arrow-down.png"
-                                alt="location"
-                            />
-                        </a>
-                        <ul class="dropdown-menu expandable">
-                            <li
-                                class="
-                                    bg-white
-                                    border-b border-transparent
-                                    hover:border-blue-800 hover:bg-blue-100
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
+        <header class="border-b-4 border-secondary">
+            <nav class="lg:container mx-auto">
+                <div class="header">
+                    <a href="/" class="logo">
+                        <img src="./src/images/full-logo.png" alt="logo" />
+                    </a>
+                    <div class="menu-btn">
+                        <div class="menu-btn__lines"></div>
+                    </div>
+                    <ul class="menu-items">
+                        <li class="hover-true">
+                            <a
+                                href="#"
+                                class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                                >Property</a
                             >
-                                <a href="#" class="menu-item text-center text-xs py-2"> Sharjah </a>
-                            </li>
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
+                        </li>
+                        <li class="hover-true">
+                            <a
+                                href="#"
+                                class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
                             >
-                                <a href="#" class="menu-item text-center text-xs py-2">Abu Dhabi</a>
-                            </li>
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
+                                Motores
+                            </a>
+                        </li>
+                        <li class="hover-true">
+                            <a
+                                href="#"
+                                class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
                             >
-                                <a href="#" class="menu-item text-center text-xs py-2">Fujairah</a>
-                            </li>
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
+                                Electronics
+                            </a>
+                        </li>
+                        <li class="hover-true">
+                            <a
+                                href="#"
+                                class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                                >General Items</a
                             >
-                                <a href="#" class="menu-item text-center text-xs py-2"
-                                    >Ras al Khaimah</a
-                                >
-                            </li>
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
+                        </li>
+                        <li class="hover-true">
+                            <a
+                                href="#"
+                                class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                                >Jobs</a
                             >
-                                <a href="#" class="menu-item text-center text-xs py-2"
-                                    >Umm Al Quwain</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a
-                            href="#"
-                            class="
-                                menu-item
-                                md:text-xs
-                                lg:text-xs
-                                xl:text-base
-                                2xl:text-bastext-sm
-                                expand-btn
-                                flex
-                                justify-start
-                                lg:justify-center
-                                items-center
-                            "
-                        >
-                            <img
-                                class="h-4 w-auto mr-1"
-                                src="./src/images/language.png"
-                                alt="location"
-                            />
-                            <span> English </span>
-                            <img
-                                class="h-auto w-auto ml-3"
-                                src="./src/images/arrow-down.png"
-                                alt="location"
-                            />
-                        </a>
-                        <ul class="dropdown-menu expandable">
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
+                        </li>
+                        <li class="hover-true">
+                            <a
+                                href="#"
+                                class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
+                                >Whole Seller</a
                             >
-                                <a href="#" class="menu-item py-2 text-xs">Arabic</a>
-                            </li>
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="menu-item md:text-xs lg:text-xs xl:text-sm 2xl:text-base"
                             >
-                                <a href="#" class="menu-item py-2 text-xs">Chinese</a>
-                            </li>
-                            <li
+                                <img src="./src/images/search-icon.png" alt="search" />
+                            </a>
+                        </li>
+                        <li class="dropdown w-full lg:w-40">
+                            <a
+                                href="#"
                                 class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
-                            >
-                                <a href="#" class="menu-item py-2 text-xs">Russian</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            class="
-                                menu-item
-                                md:text-xs
-                                lg:text-xs
-                                xl:text-base
-                                text-sm2xl:text-base
-                                relative
-                            "
-                        >
-                            <img src="./src/images/notification.png" alt="notification" />
-                            <div
-                                class="
-                                    absolute
-                                    top-.5
-                                    -right-1
-                                    rounded-full
+                                    menu-item
+                                    md:text-xs
                                     lg:text-xs
+                                    xl:text-base
+                                    2xl:text-bastext-sm
+                                    expand-btn
+                                    flex
+                                    justify-start
+                                    lg:justify-center
+                                    items-center
+                                "
+                            >
+                                <img
+                                    class="h-4 w-auto mx-1"
+                                    src="./src/images/location-icon.png"
+                                    alt="location"
+                                />
+                                <span> Dubai </span>
+                                <img
+                                    class="h-auto w-auto mx-3"
+                                    src="./src/images/arrow-down.png"
+                                    alt="location"
+                                />
+                            </a>
+                            <ul class="dropdown-menu expandable">
+                                <li
+                                    class="
+                                        bg-white
+                                        border-b border-transparent
+                                        hover:border-blue-800 hover:bg-blue-100
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item text-center text-xs py-2">
+                                        Sharjah
+                                    </a>
+                                </li>
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item text-center text-xs py-2"
+                                        >Abu Dhabi</a
+                                    >
+                                </li>
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item text-center text-xs py-2"
+                                        >Fujairah</a
+                                    >
+                                </li>
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item text-center text-xs py-2"
+                                        >Ras al Khaimah</a
+                                    >
+                                </li>
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item text-center text-xs py-2"
+                                        >Umm Al Quwain</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a
+                                href="#"
+                                class="
+                                    menu-item
+                                    md:text-xs
+                                    lg:text-xs
+                                    xl:text-base
+                                    2xl:text-bastext-sm
+                                    expand-btn
+                                    flex
+                                    justify-start
+                                    lg:justify-center
+                                    items-center
+                                "
+                            >
+                                <img
+                                    class="h-4 w-auto mr-1"
+                                    src="./src/images/language.png"
+                                    alt="location"
+                                />
+                                <span> English </span>
+                                <img
+                                    class="h-auto w-auto ml-3"
+                                    src="./src/images/arrow-down.png"
+                                    alt="location"
+                                />
+                            </a>
+                            <ul class="dropdown-menu expandable">
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item py-2 text-xs">Arabic</a>
+                                </li>
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item py-2 text-xs">Chinese</a>
+                                </li>
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item py-2 text-xs">Russian</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="
+                                    menu-item
+                                    md:text-xs
+                                    lg:text-xs
+                                    xl:text-base
+                                    text-sm2xl:text-base
+                                    relative
+                                "
+                            >
+                                <img src="./src/images/notification.png" alt="notification" />
+                                <div
+                                    class="
+                                        absolute
+                                        top-.5
+                                        -right-1
+                                        rounded-full
+                                        lg:text-xs
+                                        text-white
+                                        bg-red-700
+                                        px-1
+                                        py-.5
+                                    "
+                                    style="font-size: 10px"
+                                >
+                                    2
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown w-24">
+                            <a
+                                href="#"
+                                class="
+                                    menu-item
+                                    md:text-xs
+                                    lg:text-xs
+                                    xl:text-sm
+                                    2xl:text-base
+                                    flex
+                                    justify-center
+                                "
+                            >
+                                <img src="./src/images/account-icon.png" alt="account-icon" />
+                            </a>
+                            <ul class="dropdown-menu expandable">
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item py-2 text-xs">Login</a>
+                                </li>
+                                <li
+                                    class="
+                                        bg-white
+                                        hover:bg-blue-100
+                                        border-b border-transparent
+                                        hover:border-blue-800
+                                        transition
+                                        ease-in
+                                        duration-500
+                                    "
+                                >
+                                    <a href="#" class="menu-item py-2 text-xs">Registration</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="group">
+                            <a
+                                href="#"
+                                class="
+                                    bg-primary
                                     text-white
-                                    bg-red-700
-                                    px-1
-                                    py-.5
-                                "
-                                style="font-size: 10px"
-                            >
-                                2
-                            </div>
-                        </a>
-                    </li>
-                    <li class="dropdown w-24">
-                        <a
-                            href="#"
-                            class="
-                                menu-item
-                                md:text-xs
-                                lg:text-xs
-                                xl:text-sm
-                                2xl:text-base
-                                flex
-                                justify-center
-                            "
-                        >
-                            <img src="./src/images/account-icon.png" alt="account-icon" />
-                        </a>
-                        <ul class="dropdown-menu expandable">
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
+                                    px-3
+                                    py-2
+                                    lg:px-4 lg:py-2
+                                    xl:px-6 xl:py-2
+                                    2xl:px-8 2xl:py-4
+                                    md:text-xs
+                                    lg:text-xs
+                                    xl:text-sm
+                                    2xl:text-base
+                                    shadow-none
+                                    group-hover:text-white group-hover:shadow-2xl
                                     transition
-                                    ease-in
-                                    duration-500
+                                    ease-in-out
+                                    duration-1000
+                                    rounded-lg
+                                    w-32
+                                    lg:w-auto
                                 "
                             >
-                                <a href="#" class="menu-item py-2 text-xs">Login</a>
-                            </li>
-                            <li
-                                class="
-                                    bg-white
-                                    hover:bg-blue-100
-                                    border-b border-transparent
-                                    hover:border-blue-800
-                                    transition
-                                    ease-in
-                                    duration-500
-                                "
-                            >
-                                <a href="#" class="menu-item py-2 text-xs">Registration</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="group">
-                        <a
-                            href="#"
-                            class="
-                                bg-primary
-                                text-white
-                                px-3
-                                py-2
-                                lg:px-4 lg:py-2
-                                xl:px-6 xl:py-2
-                                2xl:px-8 2xl:py-4
-                                md:text-xs
-                                lg:text-xs
-                                xl:text-sm
-                                2xl:text-base
-                                shadow-none
-                                group-hover:text-white group-hover:shadow-2xl
-                                transition
-                                ease-in-out
-                                duration-1000
-                                rounded-lg
-                                w-32
-                                lg:w-auto
-                            "
-                        >
-                            Post your AD
-                        </a>
-                    </li>
-                </ul>
-            </header>
-        </nav>
+                                Post your AD
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <!-- bredcrumb section -->
         <section class="h-auto flex flex-col justify-center items-center relative">
             <div
@@ -397,7 +413,26 @@
         <section class="flex items-start mt-12 w-full container mx-auto">
             <form class="mr-3 hidden lg:block w-96" id="filter-option">
                 <div class="shadow-xl rounded-none lg:rounded-lg overflow-hidden">
-                    <h1 class="text-2xl font-medium bg-lightBlue py-6 px-8">Menu</h1>
+                    <div class="flex justify-between items-center bg-lightBlue">
+                        <h1 class="text-2xl w-full font-medium py-6 px-8">Menu</h1>
+                        <a
+                            href="javascript:void(0)"
+                            class="
+                                block
+                                mx-1
+                                lg:mx-2 lg:hidden
+                                rounded-full
+                                px-2
+                                py-1
+                                mr-5
+                                bg-white
+                                text-primary
+                                filter-btn
+                            "
+                        >
+                            <i class="bi bi-x-lg text-xl"></i>
+                        </a>
+                    </div>
                     <ul class="list-none">
                         <li
                             class="
@@ -576,10 +611,40 @@
                     </ul>
                 </div>
             </form>
-            <div x-data="{open:true}" class="p-0 lg:p-8 w-full shadow-lg rounded-lg">
-                <h1 class="text-4xl font-medium my-5">My Listing</h1>
+            <div x-data="{open:true}" class="p-3 lg:p-8 w-full shadow-lg rounded-lg">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-4xl font-medium my-5">My Listing</h1>
+                    <a
+                        href="javascript:void(0)"
+                        class="
+                            block
+                            mx-1
+                            lg:mx-2 lg:hidden
+                            rounded-full
+                            px-2
+                            py-1
+                            mr-5
+                            bg-white
+                            text-primary
+                            filter-btn
+                        "
+                    >
+                        <i class="bi bi-list text-3xl"></i>
+                    </a>
+                </div>
                 <hr />
-                <div class="grid grid-cols-2 lg:grid-cols-5 text-center mt-11 border-b">
+                <div
+                    class="
+                        grid grid-cols-2
+                        md:grid-cols-3
+                        lg:grid-cols-2
+                        xl:grid-cols-4
+                        2xl:grid-cols-5
+                        text-center
+                        mt-11
+                        border-b
+                    "
+                >
                     <p
                         x-on:click="open = !open"
                         x-bind:class="open? 'border-secondary py-4 border-b-2 cursor-pointer transition duration-300 ease-in-out':'text-base py-4 cursor-pointer opacity-40'"
@@ -600,7 +665,7 @@
                     </p>
                 </div>
                 <div
-                    x-bind:class="open ?'mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4':'hidden'"
+                    x-bind:class="open ?'mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4':'hidden'"
                 >
                     <div
                         class="
@@ -640,7 +705,7 @@
                                 </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary mt-1">AED 30,500</p>
-                            <div class="flex items-center">
+                            <div class="flex items-center mt-2">
                                 <img
                                     class="mr-1"
                                     src="./src/images/location-icon-small.png"
@@ -648,11 +713,28 @@
                                 />
                                 <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
                             </div>
-                            <p class="text-xs mt-1 text-tertiary">Posted On 20 Sep, 2021</p>
-                            <div class="flex items-center">
+                            <p class="text-xs mt-2 text-tertiary">Posted On 20 Sep, 2021</p>
+                            <div class="flex items-center mt-2">
                                 <img class="mr-2" src="./src/images/eye-icon.png" alt="eye" />
                                 <p class="text-xs mt-1 text-tertiary">87 Views</p>
                             </div>
+                        </div>
+
+                        <!-- boosted icon -->
+                        <div
+                            class="
+                                absolute
+                                transition
+                                duration-300
+                                ease-in-out
+                                left-6
+                                top-4
+                                p-2
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img class="h-7" src="./src/images/boost-sign-3.png" alt="boost" />
                         </div>
                         <div
                             class="
@@ -768,7 +850,7 @@
                                 </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary mt-1">AED 25,200</p>
-                            <div class="flex items-center">
+                            <div class="flex items-center mt-2">
                                 <img
                                     class="mr-1"
                                     src="./src/images/location-icon-small.png"
@@ -776,7 +858,29 @@
                                 />
                                 <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
                             </div>
+                            <p class="text-xs mt-2 text-tertiary">Posted On 20 Sep, 2021</p>
+                            <div class="flex items-center mt-2">
+                                <img class="mr-2" src="./src/images/eye-icon.png" alt="eye" />
+                                <p class="text-xs mt-1 text-tertiary">87 Views</p>
+                            </div>
                         </div>
+
+                        <div
+                            class="
+                                absolute
+                                transition
+                                duration-300
+                                ease-in-out
+                                left-6
+                                top-4
+                                p-2
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img class="h-7" src="./src/images/boost-sign-4.png" alt="boost" />
+                        </div>
+
                         <div
                             class="
                                 absolute
@@ -892,7 +996,7 @@
                                 </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary mt-1">AED 60,000</p>
-                            <div class="flex items-center">
+                            <div class="flex items-center my-t">
                                 <img
                                     class="mr-1"
                                     src="./src/images/location-icon-small.png"
@@ -900,7 +1004,30 @@
                                 />
                                 <p class="text-xs text-tertiary">Business Bay - UAE</p>
                             </div>
+                            <p class="text-xs mt-2 text-tertiary">Posted On 20 Sep, 2021</p>
+                            <div class="flex items-center mt-2">
+                                <img class="mr-2" src="./src/images/eye-icon.png" alt="eye" />
+                                <p class="text-xs mt-1 text-tertiary">87 Views</p>
+                            </div>
                         </div>
+
+                        <!-- boosted icon -->
+                        <div
+                            class="
+                                absolute
+                                transition
+                                duration-300
+                                ease-in-out
+                                left-6
+                                top-4
+                                p-2
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img class="h-7" src="./src/images/boost-sign-3.png" alt="boost" />
+                        </div>
+
                         <div
                             class="
                                 absolute
@@ -1016,7 +1143,7 @@
                                 </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary mt-1">AED 42,100</p>
-                            <div class="flex items-center">
+                            <div class="flex items-center mt-2">
                                 <img
                                     class="mr-1"
                                     src="./src/images/location-icon-small.png"
@@ -1024,7 +1151,30 @@
                                 />
                                 <p class="text-xs text-tertiary">Creek Harbour - UAE</p>
                             </div>
+                            <p class="text-xs mt-2 text-tertiary">Posted On 20 Sep, 2021</p>
+                            <div class="flex items-center mt-2">
+                                <img class="mr-2" src="./src/images/eye-icon.png" alt="eye" />
+                                <p class="text-xs mt-1 text-tertiary">87 Views</p>
+                            </div>
                         </div>
+
+                        <!-- boosted icon -->
+                        <div
+                            class="
+                                absolute
+                                transition
+                                duration-300
+                                ease-in-out
+                                left-6
+                                top-4
+                                p-2
+                                bg-blurBg
+                                rounded-lg
+                            "
+                        >
+                            <img class="h-7" src="./src/images/boost-sign-4.png" alt="boost" />
+                        </div>
+
                         <div
                             class="
                                 absolute
@@ -1140,13 +1290,18 @@
                                 </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary mt-1">AED 20,500</p>
-                            <div class="flex items-center">
+                            <div class="flex items-center mt-2">
                                 <img
                                     class="mr-1"
                                     src="./src/images/location-icon-small.png"
                                     alt="location"
                                 />
                                 <p class="text-xs text-tertiary">Dubai - UAE</p>
+                            </div>
+                            <p class="text-xs mt-2 text-tertiary">Posted On 20 Sep, 2021</p>
+                            <div class="flex items-center mt-2">
+                                <img class="mr-2" src="./src/images/eye-icon.png" alt="eye" />
+                                <p class="text-xs mt-1 text-tertiary">87 Views</p>
                             </div>
                         </div>
                         <div
@@ -2094,7 +2249,7 @@
                 </div>
 
                 <div
-                    x-bind:class="!open ?'mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4':'hidden'"
+                    x-bind:class="!open ?'mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4':'hidden'"
                 >
                     <div
                         class="
@@ -3775,6 +3930,21 @@
         <script src="./src/js/index.js"></script>
         <script>
             new WOW().init();
+            $('.filter-btn').on('click', () => {
+                if (
+                    $('#filter-option').attr('class').trim() !==
+                    'fixed inset-0 z-10 h-full w-full bg-white mr-3 overflow-auto'
+                ) {
+                    $('#filter-option').attr(
+                        'class',
+                        'fixed inset-0 z-10 h-full w-full bg-white mr-3 overflow-auto',
+                    );
+                    $('body').addClass('overflow-hidden');
+                } else {
+                    $('#filter-option').attr('class', 'mr-3 hidden lg:block');
+                    $('body').removeClass('overflow-hidden');
+                }
+            });
         </script>
     </body>
 </html>
