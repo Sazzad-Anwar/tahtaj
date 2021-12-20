@@ -319,7 +319,9 @@
                                         duration-500
                                     "
                                 >
-                                    <a href="#" class="menu-item py-2 text-xs">Login</a>
+                                <a href="mylistingTab.html" class="menu-item py-2 text-xs">
+                                    Login
+                                </a>
                                 </li>
                                 <li
                                     class="
@@ -735,7 +737,7 @@
         <!-- popular category carousel -->
         <section class="container mt-28 mx-auto">
             <div class="carousel-wrap relative">
-                <div class="owl-carousel owl-theme">
+                <div class="popular-category owl-carousel owl-theme">
                     <div class="item justify-center lg:justify-between">
                         <div class="w-96 bg-white border rounded-lg shadow h-48 overflow-hidden">
                             <div class="flex justify-between px-5 py-3 bg-gray-100">
@@ -1027,334 +1029,59 @@
                         >View all
                     </a>
                 </div>
+                <div class="relative mt-4">
+                    <div class="trending-ads owl-carousel owl-theme">
+                        <div
+                            class="
+                                bg-white
+                                p-4
+                                border
+                                rounded-xl
+                                animate__animated animate__fadeIn
+                                wow
+                            "
+                        >
+                            <div class="rounded-xl overflow-hidden flex justify-center">
+                                <img
+                                    class="
+                                        sm:h-36
+                                        w-full
+                                        h-auto
+                                        transform
+                                        scale-100
+                                        hover:scale-110
+                                        transition
+                                        duration-300
+                                        ease-in-out
+                                    "
+                                    src="./src/images/trending-ads-1.png"
+                                    alt="ad-1"
+                                />
+                            </div>
 
-                <div
-                    class="
-                        mt-4
-                        grid grid-cols-1
-                        sm:grid-cols-2
-                        md:grid-cols-3
-                        lg:grid-cols-4
-                        xl:grid-cols-6
-                        gap-4
-                    "
-                >
-                    <a
-                        href="#"
-                        class="bg-white p-4 border rounded-xl animate__animated animate__fadeIn wow"
-                    >
-                        <div class="rounded-xl overflow-hidden flex justify-center">
-                            <img
-                                class="
-                                    sm:h-36 sm:w-auto
-                                    w-full
-                                    h-auto
-                                    transform
-                                    scale-100
-                                    hover:scale-110
-                                    transition
-                                    duration-300
-                                    ease-in-out
-                                "
-                                src="./src/images/trending-ads-1.png"
-                                alt="ad-1"
-                            />
+                            <div class="flex items-center mt-3">
+                                <img
+                                    class="mr-1 h-2.5 w-auto"
+                                    src="./src/images/electronics-icon.png"
+                                    alt="electronics-icon"
+                                />
+                                <p class="text-sm truncate">Sony</p>
+                            </div>
+                            <p class="text-xl font-semibold text-secondary mt-1">AED 1,600</p>
+                            <div class="flex items-center">
+                                <img
+                                    class="mr-1 h-2.5 w-auto"
+                                    src="./src/images/location-icon-small.png"
+                                    alt="location"
+                                />
+                                <p class="text-xs text-tertiary">Sheikh Zayed Road - UAE</p>
+                            </div>
                         </div>
-
-                        <div class="flex items-center mt-3">
-                            <img
-                                class="mr-1"
-                                src="./src/images/electronics-icon.png"
-                                alt="electronics-icon"
-                            />
-                            <p class="text-sm truncate">
-                                Sony 21 + TV stand. Tv is Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dicta laudantium eos perspiciatis debitis aliquid
-                                cupiditate ratione placeat quibusdam, libero nam nisi dolorem atque
-                                sunt, iusto explicabo voluptatem, nostrum autem a!
-                            </p>
-                        </div>
-                        <p class="text-xl font-semibold text-secondary mt-1">AED 1,600</p>
-                        <div class="flex items-center">
-                            <img
-                                class="mr-1"
-                                src="./src/images/location-icon-small.png"
-                                alt="location"
-                            />
-                            <p class="text-xs text-tertiary">Sheikh Zayed Road - UAE</p>
-                        </div>
-                    </a>
-
-                    <a
-                        href="#"
-                        class="
-                            bg-white
-                            p-4
-                            border
-                            rounded-xl
-                            animate__animated animate__fadeIn
-                            wow
-                            animate__delay-1s
-                        "
-                    >
-                        <div class="rounded-xl overflow-hidden flex justify-center">
-                            <img
-                                class="
-                                    sm:h-36 sm:w-auto
-                                    w-full
-                                    h-auto
-                                    transform
-                                    scale-100
-                                    hover:scale-110
-                                    transition
-                                    duration-300
-                                    ease-in-out
-                                "
-                                src="./src/images/trending-ads-2.png"
-                                alt="ad-1"
-                            />
-                        </div>
-
-                        <div class="flex items-center mt-3">
-                            <img class="mr-1" src="./src/images/car-small.png" alt="car-icon" />
-                            <p class="text-sm truncate">
-                                2016 Honda City, White, Auto Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Minus, nesciunt. Tenetur error unde debitis quasi
-                                ex velit nihil blanditiis id earum corporis rerum dicta ipsam
-                                sapiente, ullam ipsa ut! Nulla.
-                            </p>
-                        </div>
-                        <p class="text-xl font-semibold text-secondary mt-1">AED 20,500</p>
-                        <div class="flex items-center">
-                            <img
-                                class="mr-1"
-                                src="./src/images/location-icon-small.png"
-                                alt="location"
-                            />
-                            <p class="text-xs text-tertiary">Dubai - UAE</p>
-                        </div>
-                    </a>
-
-                    <a
-                        href="#"
-                        class="
-                            bg-white
-                            p-4
-                            border
-                            rounded-xl
-                            animate__animated animate__fadeIn
-                            wow
-                            animate__delay-2s
-                        "
-                    >
-                        <div class="rounded-xl overflow-hidden flex justify-center">
-                            <img
-                                class="
-                                    sm:h-36 sm:w-auto
-                                    w-full
-                                    h-auto
-                                    transform
-                                    scale-100
-                                    hover:scale-110
-                                    transition
-                                    duration-300
-                                    ease-in-out
-                                "
-                                src="./src/images/trending-ads-3.png"
-                                alt="ad-1"
-                            />
-                        </div>
-
-                        <div class="flex items-center mt-3">
-                            <img
-                                class="mr-1"
-                                src="./src/images/bed-small-icon.png"
-                                alt="bed-icon"
-                            />
-                            <p class="text-sm truncate mr-1">2 Beds |</p>
-                            <img
-                                class="mr-1"
-                                src="./src/images/bath-small-icon.png"
-                                alt="bed-icon"
-                            />
-                            <p class="text-sm truncate">1 Baths</p>
-                        </div>
-                        <p class="text-xl font-semibold text-secondary mt-1">AED 60,500</p>
-                        <div class="flex items-center">
-                            <img
-                                class="mr-1"
-                                src="./src/images/location-icon-small.png"
-                                alt="location"
-                            />
-                            <p class="text-xs text-tertiary">Dubai - UAE</p>
-                        </div>
-                    </a>
-
-                    <a
-                        href="#"
-                        class="
-                            bg-white
-                            p-4
-                            border
-                            rounded-xl
-                            animate__animated animate__fadeIn
-                            wow
-                            animate__delay-3s
-                        "
-                    >
-                        <div class="rounded-xl overflow-hidden flex justify-center">
-                            <img
-                                class="
-                                    sm:h-36 sm:w-auto
-                                    w-full
-                                    h-auto
-                                    transform
-                                    scale-100
-                                    hover:scale-110
-                                    transition
-                                    duration-300
-                                    ease-in-out
-                                "
-                                src="./src/images/trending-ads-4.png"
-                                alt="ad-1"
-                            />
-                        </div>
-
-                        <div class="flex items-center mt-3">
-                            <img
-                                class="mr-1"
-                                src="./src/images/electronics-icon.png"
-                                alt="electronics-icon"
-                            />
-                            <p class="text-sm truncate">
-                                Apple IPhone 11, 256GB Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Alias reiciendis sit perspiciatis expedita ad
-                                praesentium doloribus porro iure, aliquid iusto placeat autem,
-                                voluptates aliquam veniam aspernatur mollitia in. Officia, quidem.
-                            </p>
-                        </div>
-                        <p class="text-xl font-semibold text-secondary mt-1">AED 3,200</p>
-                        <div class="flex items-center">
-                            <img
-                                class="mr-1"
-                                src="./src/images/location-icon-small.png"
-                                alt="location"
-                            />
-                            <p class="text-xs text-tertiary">International Ciry - UAE</p>
-                        </div>
-                    </a>
-
-                    <a
-                        href="#"
-                        class="
-                            bg-white
-                            p-4
-                            border
-                            rounded-xl
-                            animate__animated animate__fadeIn
-                            wow
-                            animate__delay-4s
-                        "
-                    >
-                        <div class="rounded-xl overflow-hidden flex justify-center">
-                            <img
-                                class="
-                                    sm:h-36 sm:w-auto
-                                    w-full
-                                    h-auto
-                                    transform
-                                    scale-100
-                                    hover:scale-110
-                                    transition
-                                    duration-300
-                                    ease-in-out
-                                "
-                                src="./src/images/trending-ads-5.png"
-                                alt="ad-1"
-                            />
-                        </div>
-
-                        <div class="flex items-center mt-3">
-                            <img
-                                class="mr-1"
-                                src="./src/images/furniture-small.png"
-                                alt="electronics-icon"
-                            />
-                            <p class="text-sm truncate">
-                                10/4 ft Storage Showcase in Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Alias reiciendis sit perspiciatis expedita ad
-                                praesentium doloribus porro iure, aliquid iusto placeat autem,
-                                voluptates aliquam veniam aspernatur mollitia in. Officia, quidem.
-                            </p>
-                        </div>
-                        <p class="text-xl font-semibold text-secondary mt-1">AED 2,100</p>
-                        <div class="flex items-center">
-                            <img
-                                class="mr-1"
-                                src="./src/images/location-icon-small.png"
-                                alt="location"
-                            />
-                            <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
-                        </div>
-                    </a>
-
-                    <a
-                        href="#"
-                        class="
-                            bg-white
-                            p-4
-                            border
-                            rounded-xl
-                            animate__animated animate__fadeIn
-                            wow
-                            animate__delay-5s
-                        "
-                    >
-                        <div class="rounded-xl overflow-hidden flex justify-center">
-                            <img
-                                class="
-                                    sm:h-36 sm:w-auto
-                                    w-full
-                                    h-auto
-                                    transform
-                                    scale-100
-                                    hover:scale-110
-                                    transition
-                                    duration-300
-                                    ease-in-out
-                                "
-                                src="./src/images/trending-ads-6.png"
-                                alt="ad-1"
-                            />
-                        </div>
-
-                        <div class="flex items-center mt-3">
-                            <img
-                                class="mr-1"
-                                src="./src/images/electronics-icon.png"
-                                alt="electronics-icon"
-                            />
-                            <p class="text-sm truncate">
-                                Mac Pro retina A1502( 2014) i5 Lorem, ipsum dolor sit amet
-                                consectetur adipisicing elit. Alias reiciendis sit perspiciatis
-                                expedita ad praesentium doloribus porro iure, aliquid iusto placeat
-                                autem, voluptates aliquam veniam aspernatur mollitia in. Officia,
-                                quidem.
-                            </p>
-                        </div>
-                        <p class="text-xl font-semibold text-secondary mt-1">AED 5,300</p>
-                        <div class="flex items-center">
-                            <img
-                                class="mr-1"
-                                src="./src/images/location-icon-small.png"
-                                alt="location"
-                            />
-                            <p class="text-xs text-tertiary">Jebel Ali - UAE</p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- Popular in Property for Sale and Rent section -->
         <section class="mt-8 w-full pb-8">
             <div class="container mx-auto">
@@ -3251,7 +2978,7 @@
         ></script>
         <script src="./src/js/index.js"></script>
         <script>
-            $('.owl-carousel').owlCarousel({
+            $('.popular-category').owlCarousel({
                 dots: false,
                 loop: true,
                 navText: [
@@ -3291,6 +3018,41 @@
                         nav: true,
                         margin: 50,
                         stagePadding: 10,
+                    },
+                },
+            });
+
+            $('.trending-ads').owlCarousel({
+                dots: false,
+                loop: true,
+                navText: [
+                    "<img class='rounded-full' src='./src/images/previous.png' />",
+                    "<img class='rounded-full' src='./src/images/next.png' />",
+                ],
+                autoplay: true,
+                autoplayTimeout: 1500,
+                autoplayHoverPause: true,
+                margin: 20,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    600: {
+                        items: 2,
+                        nav: false,
+                    },
+                    1024: {
+                        items: 3,
+                        nav: true,
+                    },
+                    1200: {
+                        items: 4,
+                        nav: true,
+                    },
+                    1500: {
+                        items: 6,
+                        nav: true,
                     },
                 },
             });

@@ -5,3 +5,7 @@
 .active-btn {
     @apply bg-primary text-white;
 }
+
+.normal-transition {
+    @apply transition duration-300 ease-in-out;
+}

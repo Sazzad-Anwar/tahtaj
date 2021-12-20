@@ -63,3 +63,17 @@ $('.go-top').on('click', () => {
         scrollTop: 0
     });
 })
+
+
+// tailwind modal
+const modal = (modalId) => {
+    if (document.getElementById(modalId).classList.contains('opacity-0')) {
+        document.getElementById(modalId).classList.remove('opacity-0');
+        document.getElementById(modalId).classList.remove('invisible');
+        document.getElementById(modalId).classList.add('opacity-100');
+    } else {
+        document.getElementById(modalId).classList.add('opacity-0');
+        document.getElementById(modalId).classList.add('invisible');
+        document.getElementById(modalId).classList.remove('opacity-100');
+    }
+};
