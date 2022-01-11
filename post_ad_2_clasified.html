@@ -768,8 +768,8 @@
                                     />
                                 </div>
                             </div>
-
-                            <div>
+                            <br />
+                            <div class="col-span-2 gri">
                                 <h3 class="text-xl mb-4">Add Images</h3>
                                 <div
                                     class="
@@ -803,9 +803,11 @@
                                             name="price-from"
                                             class="z-0 w-full lg:w-1/2 opacity-0"
                                             type="file"
+                                            onchange="readFile(this)"
                                             accept="image/*"
                                             id="imageUpload"
                                             placeholder="Enter Price"
+                                            multiple
                                         />
                                     </div>
                                     <button
@@ -822,13 +824,15 @@
                                             duration-300
                                             ease-in-out
                                         "
+                                        onclick="upload()"
                                     >
                                         Upload
                                     </button>
                                 </div>
+                                <div id="images" class="flex flex-wrap my-3"></div>
                             </div>
 
-                            <div>
+                            <div class="col-span-2">
                                 <h3 class="text-xl mb-4">Add Video</h3>
                                 <div
                                     class="
@@ -858,6 +862,7 @@
                                             Select Video
                                         </label>
                                         <input
+                                            onchange="readVideoFile(this)"
                                             name="price-from"
                                             class="z-0 w-1/2 opacity-0"
                                             type="file"
@@ -884,6 +889,7 @@
                                         Upload
                                     </button>
                                 </div>
+                                <div id="videos" class="flex flex-wrap my-3"></div>
                             </div>
                         </div>
                     </div>
@@ -1422,6 +1428,105 @@
                     $('#videoName').text(e.target.files[0].name);
                 });
             });
+
+            function readFile(input) {
+                if (input.files) {
+                    for (img in input.files) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('#images').append(`
+                                <div class="relative mx-2 border rounded-xl h-24 w-24 flex justify-center items-center">
+                                    <div>
+                                        <img
+                                            onclick="this.parentElement.parentElement.remove()"
+                                            class="
+                                                h-6
+                                                w-6
+                                                absolute
+                                                top-2
+                                                right-2
+                                                cursor-pointer
+                                                rounded-full
+                                            "
+                                            src="./src/images/modal-close.png"
+                                            alt="modal-close"
+                                        />
+                                        <img
+                                            src="${e.target.result}"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            `);
+                            // $('#images').attr('src', e.target.result).width(150).height(200);
+                        };
+                        reader.readAsDataURL(input.files[img]);
+                    }
+                }
+            }
+
+            function readVideoFile(input) {
+                if (input.files) {
+                    for (img in input.files) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('#videos').append(`
+                                <div class="relative mx-2 border rounded-xl flex justify-center items-center">
+                                    <div>
+                                        <img
+                                            onclick="this.parentElement.parentElement.remove()"
+                                            class="
+                                                h-6
+                                                w-6
+                                                absolute
+                                                top-2
+                                                right-2
+                                                cursor-pointer
+                                                rounded-full
+                                                z-20
+                                            "
+                                            src="./src/images/modal-close.png"
+                                            alt="modal-close"
+                                        />
+                                        <video controls width="250" height="112">
+                                            <source 
+                                                src="${e.target.result}"
+                                                type="video/mp4" 
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                            `);
+                            // $('#images').attr('src', e.target.result).width(150).height(200);
+                        };
+
+                        reader.readAsDataURL(input.files[img]);
+                    }
+                }
+            }
+
+            var formData = new FormData();
+            document.getElementById('imageUpload').addEventListener('change', (e) => {
+                let images = e.target.files;
+                for (image in images) {
+                    formData.append('image', images[image]);
+                }
+            });
+            let images = [];
+            function upload() {
+                fetch('http://tahtaj.r-y-x.net/api/v1/Post/AddPostImages', {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'cors',
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                    },
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        images.push(data.result.result);
+                    });
+            }
         </script>
     </body>
 </html>

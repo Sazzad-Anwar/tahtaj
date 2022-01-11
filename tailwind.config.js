@@ -1,8 +1,7 @@
 module.exports = {
-  // mode: 'jit',
-  purge: [],
+  mode: 'jit',
+  content: ['./*.html', './src/**/*.js'],
   important: true,
-  darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
       padding: {
@@ -49,9 +48,6 @@ module.exports = {
         '769': '48.06rem'
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

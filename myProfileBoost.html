@@ -406,75 +406,114 @@
                             Boosted ads are placed on top of all Standard ads
                         </p>
 
-                        <div x-data="{clicked: 0}" class="my-8">
-                            <div
-                                class="
-                                    w-full
-                                    border border-secondary
-                                    rounded-xl
-                                    relative
-                                    mb-5
-                                    cursor-pointer
-                                "
-                                x-on:click="clicked = 1"
-                            >
-                                <img
-                                    class="absolute right-0 top-0"
-                                    src="./src/images/boosted-sign-1.png"
-                                    alt="boosted-sign-1"
-                                />
-                                <div class="flex justify-between items-center mx-8 my-6">
-                                    <div class="flex items-center">
-                                        <div
-                                            x-bind:class="clicked === 1 ? 'h-10 w-10 border rounded-full mr-4 bg-secondary transition ease-in duration-200':'h-10 w-10 border rounded-full mr-4 bg-transparent transition ease-in duration-200'"
-                                        ></div>
-                                        <div>
-                                            <h1 class="text-sm lg:text-lg font-medium">
-                                                Boost your ad for 15 days
-                                            </h1>
-                                            <p class="text-xs text-tertiary">
-                                                Get more view to post
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-xl text-secondary">AED 15</h1>
-                                </div>
-                            </div>
-
-                            <div
-                                class="
-                                    w-full
-                                    border border-primary
-                                    rounded-xl
-                                    relative
-                                    cursor-pointer
-                                "
-                            >
-                                <img
-                                    class="absolute right-0 top-0"
-                                    src="./src/images/boosted-sign-2.png"
-                                    alt="boosted-sign-1"
-                                />
+                        <div class="my-8">
+                            <label for="boost-15">
                                 <div
-                                    class="flex justify-between items-center mx-8 my-6"
-                                    x-on:click="clicked = 2"
+                                    class="
+                                        w-full
+                                        border border-secondary
+                                        rounded-xl
+                                        relative
+                                        mb-5
+                                        cursor-pointer
+                                    "
                                 >
-                                    <div class="flex items-center">
-                                        <div
-                                            x-bind:class="clicked === 2 ? 'h-10 w-10 border rounded-full mr-4 bg-primary transition ease-in duration-200':'h-10 w-10 border rounded-full mr-4 bg-transparent transition ease-in duration-200'"
-                                        ></div>
-                                        <div>
-                                            <h1 class="text-sm lg:text-lg font-medium">
-                                                Boost your ad for 15 days
-                                            </h1>
-                                            <p class="text-xs text-tertiary">
-                                                Get more view to post
-                                            </p>
+                                    <img
+                                        class="absolute right-0 top-0"
+                                        src="./src/images/boosted-sign-1.png"
+                                        alt="boosted-sign-1"
+                                    />
+                                    <div class="flex justify-between items-center mx-8 my-6">
+                                        <div class="flex items-center">
+                                            <input
+                                                type="radio"
+                                                class="
+                                                    h-10
+                                                    w-10
+                                                    border-none
+                                                    rounded-full
+                                                    mr-4
+                                                    transition
+                                                    ease-in
+                                                    duration-200
+                                                    cursor-pointer
+                                                    accent-[#00ACE1]
+                                                    bg-secondary
+                                                    relative
+                                                    after:content-[''] after:absolute after:inset-0
+                                                    checked:after:bg-secondary
+                                                    after:rounded-full
+                                                "
+                                                value="boost-15"
+                                                name="boost-package"
+                                            />
+                                            <div>
+                                                <h1 class="text-sm lg:text-lg font-medium">
+                                                    Boost your ad for 15 days
+                                                </h1>
+                                                <p class="text-xs text-tertiary">
+                                                    Get more view to post
+                                                </p>
+                                            </div>
                                         </div>
+                                        <h1 class="text-xl text-secondary">AED 15</h1>
                                     </div>
-                                    <h1 class="text-xl text-primary">AED 15</h1>
                                 </div>
-                            </div>
+                            </label>
+                            <label for="boost-30">
+                                <div
+                                    class="
+                                        w-full
+                                        border border-primary
+                                        rounded-xl
+                                        relative
+                                        cursor-pointer
+                                    "
+                                >
+                                    <img
+                                        class="absolute right-0 top-0"
+                                        src="./src/images/boosted-sign-2.png"
+                                        alt="boosted-sign-1"
+                                    />
+                                    <div
+                                        class="flex justify-between items-center mx-8 my-6"
+                                        x-on:click="clicked = 2"
+                                    >
+                                        <div class="flex items-center">
+                                            <input
+                                                type="radio"
+                                                class="
+                                                    h-10
+                                                    w-10
+                                                    border
+                                                    rounded-full
+                                                    mr-4
+                                                    transition
+                                                    ease-in
+                                                    duration-200
+                                                    cursor-pointer
+                                                    accent-[#00ACE1]
+                                                    relative
+                                                    after:content-[''] after:absolute after:inset-0
+                                                    checked:after:bg-secondary
+                                                    after:rounded-full
+                                                "
+                                                value="boost-30"
+                                                name="boost-package"
+                                            />
+                                            <div>
+                                                <h1 class="text-sm lg:text-lg font-medium">
+                                                    Boost your ad for 15 days
+                                                </h1>
+                                                <p class="text-xs text-tertiary">
+                                                    Get more view to post
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-xl text-primary">AED 30</h1>
+                                    </div>
+                                </div>
+                            </label>
                         </div>
 
                         <a
@@ -815,6 +854,14 @@
         <script src="./src/js/index.js"></script>
         <script>
             new WOW().init();
+
+            $(document).ready(function () {
+                $('input[name="boost-package"][value="boost-@"]').prop('checked', true);
+                $('input[name="boost-package"]').on('change', () => {
+                    console.log($('input[name="boost-package"]:checked').val());
+                });
+                console.log($('input[name="boost-package"]:checked').val());
+            });
         </script>
     </body>
 </html>
