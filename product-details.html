@@ -182,7 +182,8 @@
             <div class="relative">
                 <img class="rounded-b-lg h-full main-img" src="./src/images/product-details-1.png"
                     alt="product-details-1" height="548" width="1166" />
-                <div class="lg:h-12 lg:w-12 h-6 w-6 absolute lg:right-20 right-12 bg-white rounded-full flex justify-center items-center mt-5 top-0 cursor-pointer transform scale-100 hover:scale-95 transition duration-200 ease-in-out"
+                <div onclick="addToWishList(45)"
+                    class="lg:h-12 lg:w-12 h-6 w-6 absolute lg:right-20 right-12 bg-[#C7C8C8] rounded-full flex justify-center items-center mt-5 top-0 cursor-pointer transform scale-100 hover:scale-95 transition duration-200 ease-in-out"
                     id="addToWishList">
                     <i class="bi bi-heart-fill text-2xl text-red-600"></i>
                 </div>
@@ -1260,7 +1261,9 @@
             });
         });
 
-        document.querySelector('#addToWishList').addEventListener('click', () => {
+
+        function addToWishList(id) {
+            console.log(id)
             if (document.querySelector('#addToWishList i').classList.contains('bi-heart')) {
                 document.querySelector('#addToWishList i').classList.add('bi-heart-fill');
                 document.querySelector('#addToWishList i').classList.remove('bi-heart');
@@ -1268,8 +1271,7 @@
                 document.querySelector('#addToWishList i').classList.remove('bi-heart-fill');
                 document.querySelector('#addToWishList i').classList.add('bi-heart');
             }
-        });
-
+        }
     </script>
 </body>
 
