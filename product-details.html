@@ -29,9 +29,9 @@
 <body>
     <!-- nav -->
     <header x-data="{modalOpen : false }"
-        x-bind:class="modalOpen ? 'overflow-hidden z-0 border-b-4 border-secondary':'border-b-4 border-secondary'">
+        x-bind:class="modalOpen ? 'overflow-hidden z-0 border-b-4 border-secondary':'border-b-4 z-0 border-secondary'">
         <nav class="lg:container mx-auto">
-            <div class="header">
+            <div class="header z-0">
                 <a href="/" class="logo">
                     <img src="./src/images/full-logo.png" alt="logo" />
                 </a>
@@ -179,7 +179,7 @@
     <!-- product image -->
     <section class="container mx-auto flex flex-col lg:flex-row justify-between mt-12">
         <div class="px-2 lg:px-7 shadow-lg lg:w-990 xl:w-auto lg:mx-4 relative">
-            <div class="relative">
+            <div class="relative" x-data="{showShareIcons : false}">
                 <img class="rounded-b-lg h-full main-img" src="./src/images/product-details-1.png"
                     alt="product-details-1" height="548" width="1166" />
                 <div onclick="addToWishList(45)"
@@ -187,12 +187,27 @@
                     id="addToWishList">
                     <i class="bi bi-heart-fill text-2xl text-red-600"></i>
                 </div>
-                <img class="lg:h-12 lg:w-12 h-6 w-6 absolute right-5 mt-5 top-0 cursor-pointer transform scale-100 hover:scale-95 transition duration-200 ease-in-out"
+                <img x-on:click="showShareIcons = !showShareIcons"
+                    class="lg:h-12 lg:w-12 h-6 w-6 absolute right-5 mt-5 top-0 cursor-pointer transform scale-100 hover:scale-95 transition duration-200 ease-in-out"
                     src="./src/images/share-icon.png" alt="add-to-wishlist" />
+
+                <div x-show="showShareIcons">
+                    <div class="absolute right-5 top-20 bg-white flex items-center p-4 rounded-xl z-30">
+                        <a href="#" class="mr-3">
+                            <i class="bi bi-facebook text-3xl text-blue-600"></i>
+                        </a>
+                        <a href="#" class="mr-3">
+                            <i class="bi bi-instagram text-red-600 text-3xl"></i>
+                        </a>
+                        <a href="#" class="mr-3">
+                            <i class="bi bi-linkedin text-[#2867B2] text-3xl rounded-md"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="mx-auto">
                 <div class="product-carousel relative mx-auto">
-                    <div class="product-details owl-carousel owl-theme">
+                    <div class="product-details owl-carousel owl-theme z-10">
                         <div class="item overflow-hidden">
                             <img class="w-40 h-24 lg:h-28 lg:w-40 cursor-pointer border-4 hover:border-primary transition duration-200 ease-in-out rounded-xl thumb-img"
                                 src="./src/images/product-details-1.png" alt="product-details" />
@@ -436,7 +451,7 @@
                 </button>
 
                 <!-- modal for swap-->
-                <div class="absolute z-20 inset-0 overflow-y-auto invisible opacity-0 ease-in-out duration-300"
+                <div class="fixed z-50 inset-0 overflow-y-auto invisible opacity-0 ease-in-out duration-300"
                     aria-labelledby="modal-title" role="dialog" aria-modal="true" id="swap-now">
                     <div
                         class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
