@@ -180,7 +180,7 @@
     <section class="container mx-auto flex flex-col lg:flex-row justify-between mt-12">
         <div class="px-2 lg:px-7 shadow-lg lg:w-990 xl:w-auto lg:mx-4 relative">
             <div class="relative" x-data="{showShareIcons : false}">
-                <img class="rounded-b-lg h-full main-img" src="./src/images/product-details-1.png"
+                <img class="rounded-b-lg h-full main-img z-20" src="./src/images/product-details-1.png"
                     alt="product-details-1" height="548" width="1166" />
                 <div onclick="addToWishList(45)"
                     class="lg:h-12 lg:w-12 h-6 w-6 absolute lg:right-20 right-12 bg-[#C7C8C8] rounded-full flex justify-center items-center mt-5 top-0 cursor-pointer transform scale-100 hover:scale-95 transition duration-200 ease-in-out"
@@ -188,7 +188,7 @@
                     <i class="bi bi-heart-fill text-2xl text-red-600"></i>
                 </div>
                 <img x-on:click="showShareIcons = !showShareIcons"
-                    class="lg:h-12 lg:w-12 h-6 w-6 absolute right-5 mt-5 top-0 cursor-pointer transform scale-100 hover:scale-95 transition duration-200 ease-in-out"
+                    class="lg:h-12 z-20 lg:w-12 h-6 w-6 absolute right-5 mt-5 top-0 cursor-pointer transform scale-100 hover:scale-95 transition duration-200 ease-in-out"
                     src="./src/images/share-icon.png" alt="add-to-wishlist" />
 
                 <div x-show="showShareIcons">

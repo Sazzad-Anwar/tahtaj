@@ -37,7 +37,8 @@ module.exports = {
       'tertiary': '#838383',
       'paste': '#00BFA5',
       'borderBlue': "#4285F4",
-      'mediumBlack': '#2F2F2F'
+      'mediumBlack': '#2F2F2F',
+      'white': '#FFFFFF',
     }),
     extend: {
       spacing: {
@@ -49,5 +50,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }
