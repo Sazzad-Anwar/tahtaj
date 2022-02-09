@@ -365,63 +365,7 @@
             <hr class="w-full bg-[#D9D7D7]" />
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 mt-5 lg:mt-12">
                 <div class="rounded-md shadow-md overflow-auto h-[32.375rem] lg:h-[50rem] w-full chatList">
-
                     <!-- Chat list -->
-                    <div
-                        class="chatListCard border-l-4 cursor-pointer normal-transition border-white hover:border-[#00ACE1] hover:bg-[#F5F5F5] px-5 py-4 flex lg:flex-row flex-col items-start lg:items-center justify-start lg:justify-between">
-                        <div class="flex">
-                            <div class="relative w-12 ">
-                                <img class="h-12 w-12 rounded-full ring-1 ring-[#00ACE1]"
-                                    src="./src/images/user-img.png" alt="user">
-                                <span
-                                    class="h-4 w-4 bg-secondary text-white flex justify-center items-center text-xs rounded-full absolute top-0 right-0">
-                                    8
-                                </span>
-                            </div>
-                            <div class="w-48 ml-2">
-                                <h1 class="text-lg font-semibold">Noor Ali</h1>
-                                <div class="flex items-center">
-                                    <img src="./src/images/tick-mark.png" alt="tick-mark">
-                                    <span class="text-xs text-tertiary truncate">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur pariatur
-                                        eaque quos ipsam iste aspernatur maxime magnam quas voluptates repellendus.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex lg:flex-col flex-row mt-3 lg:mt-0">
-                            <p class="text-xs text-tertiary text-left lg:text-right">16 July, 2021</p>
-                            <p class="text-xs text-tertiary text-left lg:text-right">4.15 PM</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="chatListCard border-l-4 bg-[#F5F5F5] border-[#00ACE1] cursor-pointer normal-transition hover:border-[#00ACE1] hover:bg-[#F5F5F5] px-5 py-4 flex lg:flex-row flex-col items-start lg:items-center justify-start lg:justify-between">
-                        <div class="flex">
-                            <div class="relative w-12 ">
-                                <img class="h-12 w-12 rounded-full ring-1 ring-[#00ACE1]"
-                                    src="./src/images/user-img.png" alt="user">
-                                <span
-                                    class="h-4 w-4 bg-secondary text-white flex justify-center items-center text-xs rounded-full absolute top-0 right-0">
-                                    8
-                                </span>
-                            </div>
-                            <div class="w-48 ml-2">
-                                <h1 class="text-lg font-semibold">Noor Ali</h1>
-                                <div class="flex items-center">
-                                    <img src="./src/images/tick-mark.png" alt="tick-mark">
-                                    <span class="text-xs text-tertiary truncate">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur pariatur
-                                        eaque quos ipsam iste aspernatur maxime magnam quas voluptates repellendus.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex lg:flex-col flex-row mt-3 lg:mt-0">
-                            <p class="text-xs text-tertiary text-left lg:text-right">16 July, 2021</p>
-                            <p class="text-xs text-tertiary text-left lg:text-right">4.15 PM</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-span-2 invisible h-0 relative chat-panel lg:h-[50rem] lg:visible">
                     <div class="flex justify-between items-center mb-6">
@@ -430,110 +374,15 @@
                                 class="bi bi-arrow-left-short block lg:hidden rounded-md text-2xl px-2 py-1 bg-secondary text-white mr-3"></i>
                             <span class="text-xl block lg:hidden">Back</span>
                         </div>
-                        <h1 class="text-xl font-semibold chat-headline">Noor Ali</h1>
+                        <h1 class="text-xl font-semibold chat-headline receiverUser"></h1>
                     </div>
                     <hr class="bg-secondary w-full mb-6" />
-                    <div class="bg-[#F5F5F5] p-4 flex lg:flex-row flex-col mb-1 chat-product-details">
-                        <img class="w-full h-44 lg:w-[8.625rem] lg:h-[6.125rem] rounded-lg mr-4"
-                            src="./src/images/electronic-3.png" alt="">
-                        <div>
-                            <h1 class="text-sm font-semibold lg:w-56 w-full line-clamp-2">Iphone 11 512GB Red New Under
-                                Apple
-                                Warranty
-                            </h1>
-                            <h2 class="text-base font-semibold text-secondary">AED 3,500</h2>
-                            <div class="flex items-center">
-                                <img class="mr-1" src="./src/images/location-icon-small.png" alt="location" />
-                                <p class="text-xs text-tertiary">Business Bay - UAE</p>
-                            </div>
-                            <p class="mt-1 text-xs text-tertiary">Posted About 6 Hours Ago</p>
-                        </div>
-                    </div>
+
+                    <!-- post details area -->
+                    <div class="postDetails chat-product-details"></div>
 
                     <!-- chat body -->
-                    <div class="chat-body overflow-auto mt-2 scroll-smooth h-0 lg:h-auto lg:visible px-3">
-
-                        <!-- others chat -->
-                        <div class="flex mb-6">
-                            <img class="h-9 w-9 rounded-full" src="./src/images/user-img.png" alt="user">
-                            <div class="chat-container">
-                                <div class="message from rounded-lg">Hi</div>
-                                <div class="message from rounded-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt illum culpa
-                                    quam ipsa, sunt quis ea quisquam minima voluptas iure maxime dolores quidem
-                                    harum
-                                    reiciendis laboriosam praesentium repellendus odio commodi fuga eaque quibusdam
-                                    dolor nostrum vero. Beatae nesciunt et odit neque soluta minima placeat
-                                    architecto
-                                    error odio. Nam porro nulla tenetur laudantium quos. Sed harum ad ducimus fugiat
-                                    corporis laboriosam, quibusdam, reiciendis temporibus vero voluptate quam
-                                    doloribus.
-                                    Quae velit repellat commodi vero, praesentium in sint minus? Sapiente libero
-                                    ipsam
-                                    quae perspiciatis dolor magni aperiam aut, ullam mollitia eum iste neque sunt
-                                    labore
-                                    architecto beatae laboriosam rem commodi eligendi dolorum.
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="h-2 w-3 mr-3" src="./src/images/tick-mark.png" alt="tick-mark">
-                                    <p class="text-xs text-tertiary">Jan 30, 2021 | 8:45 AM</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- your chat -->
-                        <div class="flex flex-row-reverse mb-6">
-                            <img class="h-9 w-9 rounded-full" src="./src/images/user-img.png" alt="user">
-                            <div class="chat-container">
-                                <div class="message to rounded-lg">Hi</div>
-                                <div class="message to rounded-lg">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, explicabo
-                                    quo.
-                                    Mollitia doloribus dolores natus delectus, non ducimus commodi vitae, officia
-                                    minus
-                                    amet optio odio accusamus eligendi odit? Nisi ab nam non voluptatem, dolores
-                                    obcaecati perspiciatis porro pariatur quaerat nulla facere consequuntur incidunt
-                                    temporibus voluptatum repellat quasi veritatis enim molestiae ea? Tenetur quam
-                                    dolorum similique modi voluptatibus dolores, assumenda obcaecati pariatur
-                                    dignissimos incidunt. Dolor officia pariatur quasi iure accusantium sequi harum
-                                    delectus non rerum suscipit natus temporibus quaerat veniam, ea sunt eaque vitae
-                                    fuga ex molestias minima asperiores odio. Officiis voluptates corrupti cumque
-                                    accusantium nam impedit qui enim aperiam dolorum.
-                                </div>
-                                <div class="flex items-center justify-end">
-                                    <img class="h-2 w-3 mr-3" src="./src/images/tick-mark.png" alt="tick-mark">
-                                    <p class="text-xs text-tertiary">Jan 30, 2021 | 8:45 AM</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex mb-6">
-                            <img class="h-9 w-9 rounded-full" src="./src/images/user-img.png" alt="user">
-                            <div class="chat-container">
-                                <div class="message from rounded-lg">Hi</div>
-                                <div class="message from rounded-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt illum culpa
-                                    quam ipsa, sunt quis ea quisquam minima voluptas iure maxime dolores quidem
-                                    harum
-                                    reiciendis laboriosam praesentium repellendus odio commodi fuga eaque quibusdam
-                                    dolor nostrum vero. Beatae nesciunt et odit neque soluta minima placeat
-                                    architecto
-                                    error odio. Nam porro nulla tenetur laudantium quos. Sed harum ad ducimus fugiat
-                                    corporis laboriosam, quibusdam, reiciendis temporibus vero voluptate quam
-                                    doloribus.
-                                    Quae velit repellat commodi vero, praesentium in sint minus? Sapiente libero
-                                    ipsam
-                                    quae perspiciatis dolor magni aperiam aut, ullam mollitia eum iste neque sunt
-                                    labore
-                                    architecto beatae laboriosam rem commodi eligendi dolorum.
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="h-2 w-3 mr-3" src="./src/images/tick-mark.png" alt="tick-mark">
-                                    <p class="text-xs text-tertiary">Jan 30, 2021 | 8:45 AM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="chat-body overflow-auto mt-2 scroll-smooth h-0 lg:h-auto lg:visible px-3"></div>
 
                     <div
                         class="absolute bottom-0 left-0 right-0 bg-[#F5F5F5] rounded-sm py-5 px-4 flex items-center chat-input-panel">
@@ -732,6 +581,7 @@
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/chat.js"></script>
     <script>
         new WOW().init();
         $('.filter-btn').on('click', () => {
