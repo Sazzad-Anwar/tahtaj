@@ -364,7 +364,7 @@
             </div>
             <hr class="w-full bg-[#D9D7D7]" />
             <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 mt-5 lg:mt-12">
-                <div class="rounded-md shadow-md overflow-auto h-[32.375rem] lg:h-[50rem] w-full chatList">
+                <div class="rounded-md shadow-md overflow-auto h-[32.375rem] lg:h-[50rem] w-full chatList relative">
                     <!-- Chat list -->
                 </div>
                 <div class="col-span-2 invisible h-0 relative chat-panel lg:h-[50rem] lg:visible">
@@ -384,10 +384,16 @@
                     <!-- chat body -->
                     <div class="chat-body overflow-auto mt-2 scroll-smooth h-0 lg:h-auto lg:visible px-3"></div>
 
-                    <div
+                    <!-- chatList details -->
+                    <span id="receiverId" class="hidden">12</span>
+                    <span id="memberId" class="hidden"></span>
+                    <span id="postId" class="hidden"></span>
+
+                    <div id="chatForm"
                         class="absolute bottom-0 left-0 right-0 bg-[#F5F5F5] rounded-sm py-5 px-4 flex items-center chat-input-panel">
-                        <input type="text" placeholder="text" class="h-12 w-full rounded-3xl px-4 focus:outline-none">
-                        <button
+                        <input type="text" id="chatInput" placeholder="text"
+                            class="h-12 w-full rounded-3xl px-4 focus:outline-none">
+                        <button id="sendChat"
                             class="px-3 py-3 bg-secondary rounded-full ml-3 active:scale-90 scale-100 normal-transition">
                             <img src="./src/images/send-button.png" alt="send-btn">
                         </button>
@@ -581,7 +587,6 @@
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./src/js/index.js"></script>
-    <script src="./src/js/chat.js"></script>
     <script>
         new WOW().init();
         $('.filter-btn').on('click', () => {
@@ -599,7 +604,15 @@
                 $('body').removeClass('overflow-hidden');
             }
         });
+
+        var queryData = {
+            memberId: 18,
+            postId: 46,
+            receiverId: 3
+        }
+
     </script>
+    <script src="./src/js/chat.js"></script>
 </body>
 
 </html>
